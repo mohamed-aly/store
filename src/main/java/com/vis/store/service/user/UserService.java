@@ -1,18 +1,14 @@
 package com.vis.store.service.user;
 
-import stationary.store.model.User;
-
-import java.util.List;
 
 
 public interface UserService {
 
-    List<User> getUsers();
+    //create
 
-    void saveUser(User theUser);
+    //read
 
-    User getUser(int theId);
+    //Update
 
-    void deleteUser(int theId);
-
+    //Delete
 }

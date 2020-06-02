@@ -1,47 +1,20 @@
 package com.vis.store.service.gradeLevel;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-import stationary.store.dao.gradeLevel.GradeLevelDAO;
-import stationary.store.model.GradeLevel;
-
-import java.util.List;
 
 
+@Slf4j
 @Service
 public class GradeLevelServiceImpl implements GradeLevelService {
 
-    // need to inject GradeLevel dao
-    @Autowired
-    private GradeLevelDAO gradeLevelDAO;
+    //create
 
-    @Override
-    @Transactional
-    public List<GradeLevel> getGradeLevels() {
-        return gradeLevelDAO.getGradeLevels();
-    }
+    //read
 
-    @Override
-    @Transactional
-    public void saveGradeLevel(GradeLevel theGradeLevel) {
+    //Update
 
-        gradeLevelDAO.saveGradeLevel(theGradeLevel);
-    }
-
-    @Override
-    @Transactional
-    public GradeLevel getGradeLevel(int theId) {
-
-        return gradeLevelDAO.getGradeLevel(theId);
-    }
-
-    @Override
-    @Transactional
-    public void deleteGradeLevel(int theId) {
-
-        gradeLevelDAO.deleteGradeLevel(theId);
-    }
+    //Delete
 }
 
 

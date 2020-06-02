@@ -1,18 +1,15 @@
 package com.vis.store.service.classifiedProduct;
 
-import stationary.store.model.ClassifiedProduct;
-
-import java.util.List;
 
 
 public interface ClassifiedProductService {
 
-    List<ClassifiedProduct> getClassifiedProducts();
+    //create
 
-    void saveClassifiedProduct(ClassifiedProduct theClassifiedProduct);
+    //read
 
-    ClassifiedProduct getClassifiedProduct(int theId);
+    //Update
 
-    void deleteClassifiedProduct(int theId);
+    //Delete
 
 }

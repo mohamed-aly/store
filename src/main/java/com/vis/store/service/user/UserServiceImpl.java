@@ -1,47 +1,20 @@
 package com.vis.store.service.user;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-import stationary.store.dao.user.UserDAO;
-import stationary.store.model.User;
-
-import java.util.List;
 
 
+@Slf4j
 @Service
 public class UserServiceImpl implements UserService {
 
-    // need to inject user dao
-    @Autowired
-    private UserDAO userDAO;
+    //create
 
-    @Override
-    @Transactional
-    public List<User> getUsers() {
-        return userDAO.getUsers();
-    }
+    //read
 
-    @Override
-    @Transactional
-    public void saveUser(User theUser) {
+    //Update
 
-        userDAO.saveUser(theUser);
-    }
-
-    @Override
-    @Transactional
-    public User getUser(int theId) {
-
-        return userDAO.getUser(theId);
-    }
-
-    @Override
-    @Transactional
-    public void deleteUser(int theId) {
-
-        userDAO.deleteUser(theId);
-    }
+    //Delete
 }
 
 

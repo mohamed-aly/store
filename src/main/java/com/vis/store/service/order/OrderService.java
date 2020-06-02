@@ -1,18 +1,15 @@
 package com.vis.store.service.order;
 
-import stationary.store.model.Order;
-
-import java.util.List;
 
 
 public interface OrderService {
 
-    List<Order> getOrders();
+    //create
 
-    void saveOrder(Order theOrder);
+    //read
 
-    Order getOrder(int theId);
+    //Update
 
-    void deleteOrder(int theId);
+    //Delete
 
 }

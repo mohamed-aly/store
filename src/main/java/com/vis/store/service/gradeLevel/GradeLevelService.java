@@ -1,18 +1,16 @@
 package com.vis.store.service.gradeLevel;
 
-import stationary.store.model.GradeLevel;
 
-import java.util.List;
 
 
 public interface GradeLevelService {
 
-    List<GradeLevel> getGradeLevels();
+    //create
 
-    void saveGradeLevel(GradeLevel theGradeLevel);
+    //read
 
-    GradeLevel getGradeLevel(int theId);
+    //Update
 
-    void deleteGradeLevel(int theId);
+    //Delete
 
 }

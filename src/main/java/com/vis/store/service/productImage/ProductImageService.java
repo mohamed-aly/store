@@ -1,18 +1,14 @@
 package com.vis.store.service.productImage;
 
-import stationary.store.model.ProductImage;
-
-import java.util.List;
-
 
 public interface ProductImageService {
 
-    List<ProductImage> getProductImages();
+    //create
 
-    void saveProductImage(ProductImage theProductImage);
+    //read
 
-    ProductImage getProductImage(int theId);
+    //Update
 
-    void deleteProductImage(int theId);
+    //Delete
 
 }

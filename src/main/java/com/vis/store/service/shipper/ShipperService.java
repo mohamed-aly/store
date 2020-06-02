@@ -1,18 +1,14 @@
 package com.vis.store.service.shipper;
 
-import stationary.store.model.Shipper;
-
-import java.util.List;
-
 
 public interface ShipperService {
 
-    List<Shipper> getShippers();
+    //create
 
-    void saveShipper(Shipper theShipper);
+    //read
 
-    Shipper getShipper(int theId);
+    //Update
 
-    void deleteShipper(int theId);
+    //Delete
 
 }

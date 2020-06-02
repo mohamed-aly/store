@@ -1,18 +1,14 @@
 package com.vis.store.service.productPatch;
 
-import stationary.store.model.ProductPatch;
-
-import java.util.List;
-
 
 public interface ProductPatchService {
 
-    List<ProductPatch> getProductPatches();
+    //create
 
-    void saveProductPatch(ProductPatch theProductPatch);
+    //read
 
-    ProductPatch getProductPatch(int theId);
+    //Update
 
-    void deleteProductPatch(int theId);
+    //Delete
 
 }

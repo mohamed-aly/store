@@ -1,57 +1,19 @@
 package com.vis.store.service.orderItem;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-import stationary.store.dao.orderItem.OrderItemDAO;
-import stationary.store.model.OrderItem;
-import stationary.store.model.Product;
-
-import java.util.List;
 
 
+@Slf4j
 @Service
 public class OrderItemServiceImpl implements OrderItemService {
+    //create
 
-    // need to inject OrderItem dao
-    @Autowired
-    private OrderItemDAO orderItemDAO;
+    //read
 
-    @Override
-    @Transactional
-    public List<OrderItem> getOrderItems() {
-        return orderItemDAO.getOrderItems();
-    }
+    //Update
 
-    @Override
-    @Transactional
-    public void saveOrderItem(OrderItem theOrderItem) {
-
-        orderItemDAO.saveOrderItem(theOrderItem);
-    }
-
-    @Override
-    @Transactional
-    public OrderItem getOrderItem(int theId) {
-
-        return orderItemDAO.getOrderItem(theId);
-    }
-
-    @Override
-    @Transactional
-    public void deleteOrderItem(int theId) {
-
-        orderItemDAO.deleteOrderItem(theId);
-    }
-
-    //////
-
-
-    @Override
-    @Transactional
-    public List<Product> getBestSellers(Integer limit){
-        return orderItemDAO.getBestSellers(limit);
-    }
+    //Delete
 }
 
 

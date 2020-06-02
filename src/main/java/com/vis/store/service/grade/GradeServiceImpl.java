@@ -1,47 +1,20 @@
 package com.vis.store.service.grade;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-import stationary.store.dao.grade.GradeDAO;
-import stationary.store.model.Grade;
-
-import java.util.List;
 
 
+@Slf4j
 @Service
 public class GradeServiceImpl implements GradeService {
 
-    // need to inject Grade dao
-    @Autowired
-    private GradeDAO gradeDAO;
+    //create
 
-    @Override
-    @Transactional
-    public List<Grade> getGrades() {
-        return gradeDAO.getGrades();
-    }
+    //read
 
-    @Override
-    @Transactional
-    public void saveGrade(Grade theGrade) {
+    //Update
 
-        gradeDAO.saveGrade(theGrade);
-    }
-
-    @Override
-    @Transactional
-    public Grade getGrade(int theId) {
-
-        return gradeDAO.getGrade(theId);
-    }
-
-    @Override
-    @Transactional
-    public void deleteGrade(int theId) {
-
-        gradeDAO.deleteGrade(theId);
-    }
+    //Delete
 }
 
 

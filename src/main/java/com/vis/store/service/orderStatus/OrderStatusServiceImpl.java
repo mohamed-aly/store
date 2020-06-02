@@ -1,47 +1,19 @@
 package com.vis.store.service.orderStatus;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-import stationary.store.dao.orderStatus.OrderStatusDAO;
-import stationary.store.model.OrderStatus;
-
-import java.util.List;
 
 
+@Slf4j
 @Service
 public class OrderStatusServiceImpl implements OrderStatusService {
+    //create
 
-    // need to inject OrderStatus dao
-    @Autowired
-    private OrderStatusDAO orderStatusDAO;
+    //read
 
-    @Override
-    @Transactional
-    public List<OrderStatus> getOrderStatuses() {
-        return orderStatusDAO.getOrderStatuses();
-    }
+    //Update
 
-    @Override
-    @Transactional
-    public void saveOrderStatus(OrderStatus theOrderStatus) {
-
-        orderStatusDAO.saveOrderStatus(theOrderStatus);
-    }
-
-    @Override
-    @Transactional
-    public OrderStatus getOrderStatus(int theId) {
-
-        return orderStatusDAO.getOrderStatus(theId);
-    }
-
-    @Override
-    @Transactional
-    public void deleteOrderStatus(int theId) {
-
-        orderStatusDAO.deleteOrderStatus(theId);
-    }
+    //Delete
 }
 
 

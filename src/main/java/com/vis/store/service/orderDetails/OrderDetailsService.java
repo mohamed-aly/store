@@ -1,18 +1,14 @@
 package com.vis.store.service.orderDetails;
 
-import stationary.store.model.OrderDetails;
-
-import java.util.List;
-
 
 public interface OrderDetailsService {
 
-    List<OrderDetails> getOrdersDetails();
+    //create
 
-    void saveOrderDetails(OrderDetails theOrderDetails);
+    //read
 
-    OrderDetails getOrderDetails(int theId);
+    //Update
 
-    void deleteOrderDetails(int theId);
+    //Delete
 
 }

@@ -1,47 +1,18 @@
 package com.vis.store.service.classifiedProduct;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-import stationary.store.dao.classifiedProduct.ClassifiedProductDAO;
-import stationary.store.model.ClassifiedProduct;
 
-import java.util.List;
-
-
+@Slf4j
 @Service
 public class ClassifiedProductServiceImpl implements ClassifiedProductService {
+    //create
 
-    // need to inject ClassifiedProduct dao
-    @Autowired
-    private ClassifiedProductDAO classifiedProductDAO;
+    //read
 
-    @Override
-    @Transactional
-    public List<ClassifiedProduct> getClassifiedProducts() {
-        return classifiedProductDAO.getClassifiedProducts();
-    }
+    //Update
 
-    @Override
-    @Transactional
-    public void saveClassifiedProduct(ClassifiedProduct theClassifiedProduct) {
-
-        classifiedProductDAO.saveClassifiedProduct(theClassifiedProduct);
-    }
-
-    @Override
-    @Transactional
-    public ClassifiedProduct getClassifiedProduct(int theId) {
-
-        return classifiedProductDAO.getClassifiedProduct(theId);
-    }
-
-    @Override
-    @Transactional
-    public void deleteClassifiedProduct(int theId) {
-
-        classifiedProductDAO.deleteClassifiedProduct(theId);
-    }
+    //Delete
 }
 
 

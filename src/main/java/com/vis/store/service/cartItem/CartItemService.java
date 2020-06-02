@@ -1,18 +1,15 @@
 package com.vis.store.service.cartItem;
 
-import stationary.store.model.CartItem;
-
-import java.util.List;
 
 
 public interface CartItemService {
 
-    List<CartItem> getCartItems();
+    //create
 
-    void saveCartItem(CartItem theCartItem);
+    //read
 
-    CartItem getCartItem(int theId);
+    //Update
 
-    void deleteCartItem(int theId);
+    //Delete
 
 }

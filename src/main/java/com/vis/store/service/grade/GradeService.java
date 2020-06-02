@@ -1,18 +1,16 @@
 package com.vis.store.service.grade;
 
-import stationary.store.model.Grade;
 
-import java.util.List;
 
 
 public interface GradeService {
 
-    List<Grade> getGrades();
+    //create
 
-    void saveGrade(Grade theGrade);
+    //read
 
-    Grade getGrade(int theId);
+    //Update
 
-    void deleteGrade(int theId);
+    //Delete
 
 }

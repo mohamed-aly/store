@@ -1,47 +1,20 @@
 package com.vis.store.service.cart;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-import stationary.store.dao.cart.CartDAO;
-import stationary.store.model.Cart;
-
-import java.util.List;
 
 
+@Slf4j
 @Service
 public class CartServiceImpl implements CartService {
 
-    // need to inject Cart dao
-    @Autowired
-    private CartDAO cartDAO;
+    //create
 
-    @Override
-    @Transactional
-    public List<Cart> getCarts() {
-        return cartDAO.getCarts();
-    }
+    //read
 
-    @Override
-    @Transactional
-    public void saveCart(Cart theCart) {
+    //Update
 
-        cartDAO.saveCart(theCart);
-    }
-
-    @Override
-    @Transactional
-    public Cart getCart(int theId) {
-
-        return cartDAO.getCart(theId);
-    }
-
-    @Override
-    @Transactional
-    public void deleteCart(int theId) {
-
-        cartDAO.deleteCart(theId);
-    }
+    //Delete
 }
 
 

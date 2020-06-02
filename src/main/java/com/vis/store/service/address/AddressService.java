@@ -1,19 +1,14 @@
 package com.vis.store.service.address;
 
 
-import stationary.store.model.Address;
-
-import java.util.List;
-
-
 public interface AddressService {
 
-    List<Address> getAddresses();
+    //create
 
-    void saveAddress(Address theAddress);
+    //read
 
-    Address getAddress(int theId);
+    //Update
 
-    void deleteAddress(int theId);
+    //Delete
 
 }

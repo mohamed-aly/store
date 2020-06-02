@@ -1,50 +1,19 @@
 package com.vis.store.service.product;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-import stationary.store.dao.product.ProductDAO;
-import stationary.store.model.Product;
-
-import java.util.List;
 
 
+@Slf4j
 @Service
 public class ProductServiceImpl implements ProductService {
+    //create
 
-    // need to inject product dao
-    @Autowired
-    private ProductDAO productDAO;
+    //read
 
-    @Override
-    @Transactional
-    public List<Product> getProducts() {
-        return productDAO.getProducts();
-    }
+    //Update
 
-
-
-
-    @Override
-    @Transactional
-    public void saveProduct(Product theProduct) {
-
-        productDAO.saveProduct(theProduct);
-    }
-
-    @Override
-    @Transactional
-    public Product getProduct(int theId) {
-
-        return productDAO.getProduct(theId);
-    }
-
-    @Override
-    @Transactional
-    public void deleteProduct(int theId) {
-
-        productDAO.deleteProduct(theId);
-    }
+    //Delete
 }
 
 

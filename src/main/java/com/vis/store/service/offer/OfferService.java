@@ -1,18 +1,13 @@
 package com.vis.store.service.offer;
 
-import stationary.store.model.Offer;
-
-import java.util.List;
-
 
 public interface OfferService {
+    //create
 
-    List<Offer> getOffers();
+    //read
 
-    void saveOffer(Offer theOffer);
+    //Update
 
-    Offer getOffer(int theId);
-
-    void deleteOffer(int theId);
+    //Delete
 
 }

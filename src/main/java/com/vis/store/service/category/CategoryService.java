@@ -1,20 +1,14 @@
 package com.vis.store.service.category;
 
-import stationary.store.model.Category;
-
-import java.util.List;
-
 
 public interface CategoryService {
 
-    List<Category> getCategories();
+    //create
 
-    List<Category> getCategories(int limit);
+    //read
 
-    void saveCategory(Category theCategory);
+    //Update
 
-    Category getCategory(int theId);
-
-    void deleteCategory(int theId);
+    //Delete
 
 }

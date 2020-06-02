@@ -1,18 +1,14 @@
 package com.vis.store.service.orderStatus;
 
-import stationary.store.model.OrderStatus;
-
-import java.util.List;
-
 
 public interface OrderStatusService {
 
-    List<OrderStatus> getOrderStatuses();
+    //create
 
-    void saveOrderStatus(OrderStatus theOrderStatus);
+    //read
 
-    OrderStatus getOrderStatus(int theId);
+    //Update
 
-    void deleteOrderStatus(int theId);
+    //Delete
 
 }

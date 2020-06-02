@@ -1,47 +1,19 @@
 package com.vis.store.service.productImage;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-import stationary.store.dao.productImage.ProductImageDAO;
-import stationary.store.model.ProductImage;
-
-import java.util.List;
 
 
+@Slf4j
 @Service
 public class ProductImageServiceImpl implements ProductImageService {
+    //create
 
-    // need to inject productImage dao
-    @Autowired
-    private ProductImageDAO productImageDAO;
+    //read
 
-    @Override
-    @Transactional
-    public List<ProductImage> getProductImages() {
-        return productImageDAO.getProductImages();
-    }
+    //Update
 
-    @Override
-    @Transactional
-    public void saveProductImage(ProductImage theProductImage) {
-
-        productImageDAO.saveProductImage(theProductImage);
-    }
-
-    @Override
-    @Transactional
-    public ProductImage getProductImage(int theId) {
-
-        return productImageDAO.getProductImage(theId);
-    }
-
-    @Override
-    @Transactional
-    public void deleteProductImage(int theId) {
-
-        productImageDAO.deleteProductImage(theId);
-    }
+    //Delete
 }
 
 

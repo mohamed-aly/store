@@ -1,19 +1,14 @@
 package com.vis.store.service.product;
 
-import stationary.store.model.Product;
-
-import java.util.List;
-
 
 public interface ProductService {
 
-    List<Product> getProducts();
+    //create
 
+    //read
 
-    void saveProduct(Product theProduct);
+    //Update
 
-    Product getProduct(int theId);
-
-    void deleteProduct(int theId);
+    //Delete
 
 }

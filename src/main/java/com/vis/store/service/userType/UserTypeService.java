@@ -1,18 +1,14 @@
 package com.vis.store.service.userType;
 
-import stationary.store.model.UserType;
-
-import java.util.List;
-
 
 public interface UserTypeService {
 
-    List<UserType> getUserTypes();
+    //create
 
-    void saveUserType(UserType theUserType);
+    //read
 
-    UserType getUserType(int theId);
+    //Update
 
-    void deleteUserType(int theId);
+    //Delete
 
 }
