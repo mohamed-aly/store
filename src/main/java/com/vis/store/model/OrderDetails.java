@@ -3,7 +3,7 @@ package com.vis.store.model;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
-import lombok.*;
+import lombok.Data;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -13,12 +13,8 @@ import java.io.Serializable;
 @Table(name = "order_details")
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
-public class OrderDetails implements Serializable {
+public class OrderDetails extends BaseEntity {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
-    private int id;
 
     @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "order_id")

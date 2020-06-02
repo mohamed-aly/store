@@ -1,17 +1,16 @@
-package com.vis.store.rest;
+package com.vis.store.controller;
 
 
-import org.json.JSONObject;
+import com.vis.store.model.Product;
+import com.vis.store.service.category.CategoryService;
+import com.vis.store.service.offer.OfferService;
+import com.vis.store.service.orderItem.OrderItemService;
+import com.vis.store.service.product.ProductService;
+import com.vis.store.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import stationary.store.model.*;
-import stationary.store.service.category.CategoryService;
-import stationary.store.service.offer.OfferService;
-import stationary.store.service.orderItem.OrderItemService;
-import stationary.store.service.product.ProductService;
-import stationary.store.service.user.UserService;
 
 import java.util.ArrayList;
 import java.util.HashMap;

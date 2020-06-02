@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c01a1f11-0e40-4b68-8988-dc488fb7657e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ERD/ERD.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/dao/AddressDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/model/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stationery-store-db/stationery-store-db.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/dao/address/AddressDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/dao/address/AddressDAOImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/dao/orderItem/OrderItemDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/dao/orderItem/OrderItemDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/model/Address.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/model/Cart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/CartItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/model/CartItem.java" afterDir="false" />
@@ -21,17 +28,35 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/Shipper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/model/Shipper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/UserType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/model/UserType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/rest/AppRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/controller/AppRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/utilities/exceptions/ErrorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/exceptions/ErrorResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/utilities/exceptions/NotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/exceptions/NotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/utilities/exceptions/RestExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/exceptions/RestExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/utilities/json/BestSellerJson.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/utilities/json/GradeJSON.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/utilities/json/GradeLevelJSON.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/utilities/json/OfferJSON.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/utilities/json/ProductJSON.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1cktx9YUi2gD0Y56aQoYR2GW589" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="compactDirectories" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -40,6 +65,7 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -47,6 +73,9 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.vis.store" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\developer\my projects\store\src\main\java\com\vis\store" />
     </key>
@@ -84,7 +113,7 @@
       <updated>1591084670829</updated>
       <workItem from="1591084702173" duration="817000" />
       <workItem from="1591085604533" duration="81000" />
-      <workItem from="1591085716121" duration="3042000" />
+      <workItem from="1591085716121" duration="6726000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1591087391383</created>
@@ -93,25 +122,46 @@
       <option name="project" value="LOCAL" />
       <updated>1591087391384</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added lombok to the entities. Closes #1">
+      <created>1591088881744</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1591088881744</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="Added lombok to the entities. Closes #1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added lombok to the entities. Closes #1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="23" key="#Plugins" timestamp="1591085580866">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="23" key="#Plugins/0.0.1366.728@0.0.1366.728" timestamp="1591085580866" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1591087389794">
+    <state x="488" y="49" key="#com.intellij.ide.util.MemberChooser" timestamp="1591094583908">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1591087389794" />
+    <state x="488" y="49" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1591094583908" />
+    <state x="324" y="281" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1591093752251">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="324" y="281" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1591093752251" />
+    <state x="479" y="245" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1591093754165">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="479" y="245" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1366.728@0.0.1366.728" timestamp="1591093754165" />
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1591088879515">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1591088879515" />
     <state x="463" y="106" key="FileChooserDialogImpl" timestamp="1591088014651">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -124,10 +174,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="352" y="70" key="Github.UntrackedFilesDialog/0.0.1366.728@0.0.1366.728" timestamp="1591086837827" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1591087394332">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1591088884330">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1591087394332" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1591088884330" />
     <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1591085717339">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

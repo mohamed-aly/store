@@ -1,4 +1,4 @@
-package com.vis.store.utilities.exceptions;
+package com.vis.store.exceptions;
 
 public class NotFoundException extends RuntimeException {
 

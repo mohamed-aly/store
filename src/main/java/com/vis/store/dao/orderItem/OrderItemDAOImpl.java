@@ -2,22 +2,14 @@ package com.vis.store.dao.orderItem;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.graph.EntityGraphs;
-import org.hibernate.graph.GraphParser;
-import org.hibernate.graph.RootGraph;
 import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import stationary.store.model.Order;
 import stationary.store.model.OrderItem;
 import stationary.store.model.Product;
 
 import javax.persistence.EntityGraph;
-import javax.persistence.EntityManager;
-import javax.persistence.Subgraph;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 @Repository
 public class OrderItemDAOImpl implements OrderItemDAO {
