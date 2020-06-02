@@ -8,7 +8,8 @@ import lombok.*;
 import javax.persistence.*;
 import java.io.Serializable;
 
-@Data
+@Getter
+@Setter
 @Entity
 @Table(name = "address")
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -38,7 +39,7 @@ public class Address implements Serializable {
     @Column(name = "special_marque")
     private String specialMarque;
 
-    @ManyToOne(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.DETACH, CascadeType.REFRESH})
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id")
     @JsonBackReference
     private User user;

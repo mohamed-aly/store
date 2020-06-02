@@ -4,12 +4,14 @@ import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
+import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
+@Data
 @Entity
 @Table(name = "orders")
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -21,7 +23,7 @@ public class Order implements Serializable {
     @Column(name = "id")
     private int id;
 
-    @ManyToOne(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.DETACH, CascadeType.REFRESH})
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "order_status_id")
     @JsonBackReference
     private OrderStatus orderStatus;
@@ -47,74 +49,4 @@ public class Order implements Serializable {
     @JoinColumn(name = "shipper_id")
     @JsonBackReference
     private Shipper shipper;
-
-
-    public Order() {
-
-    }
-
-    public Date getSumbitDate() {
-        return sumbitDate;
-    }
-
-    public void setSumbitDate(Date sumbitDate) {
-        this.sumbitDate = sumbitDate;
-    }
-
-    public int getEstDelieveryDays() {
-        return estDelieveryDays;
-    }
-
-    public void setEstDelieveryDays(int estDelieveryDays) {
-        this.estDelieveryDays = estDelieveryDays;
-    }
-
-    public Date getDelieveryDate() {
-        return delieveryDate;
-    }
-
-    public void setDelieveryDate(Date delieveryDate) {
-        this.delieveryDate = delieveryDate;
-    }
-
-    public Date getLastUpdateDate() {
-        return lastUpdateDate;
-    }
-
-    public void setLastUpdateDate(Date lastUpdateDate) {
-        this.lastUpdateDate = lastUpdateDate;
-    }
-
-    public OrderStatus getOrderStatus() {
-        return orderStatus;
-    }
-
-    public void setOrderStatus(OrderStatus orderStatus) {
-        this.orderStatus = orderStatus;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public List<OrderItem> getOrderItems() {
-        return orderItems;
-    }
-
-    public void setOrderItems(List<OrderItem> orderItems) {
-        this.orderItems = orderItems;
-    }
-
-
-    public Shipper getShipper() {
-        return shipper;
-    }
-
-    public void setShipper(Shipper shipper) {
-        this.shipper = shipper;
-    }
 }

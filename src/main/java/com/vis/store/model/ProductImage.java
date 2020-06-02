@@ -2,11 +2,13 @@ package com.vis.store.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Objects;
 
+@Data
 @Entity
 @Table(name = "product_images")
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -22,38 +24,6 @@ public class ProductImage implements Serializable {
     @Column(name = "image_url")
     private String imageUrl;
 
-    public ProductImage() {
-
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getImageUrl() {
-        return imageUrl;
-    }
-
-    public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
-    }
 
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        ProductImage that = (ProductImage) o;
-        return id == that.id &&
-                imageUrl.equals(that.imageUrl);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, imageUrl);
-    }
 }

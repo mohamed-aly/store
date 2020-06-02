@@ -4,11 +4,13 @@ import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
+import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
 
+@Data
 @Entity
 @Table(name = "grade")
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -34,39 +36,4 @@ public class Grade implements Serializable {
     @Column(name = "grade_number")
     private int gradeNumber;
 
-    public Grade() {
-
-    }
-
-    public List<ClassifiedProduct> getProducts() {
-        return classifiedProducts;
-    }
-
-    public void setProducts(List<ClassifiedProduct> products) {
-        this.classifiedProducts = products;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public GradeLevel getGradeLevel() {
-        return gradeLevel;
-    }
-
-    public void setGradeLevel(GradeLevel gradeLevel) {
-        this.gradeLevel = gradeLevel;
-    }
-
-    public int getGradeNumber() {
-        return gradeNumber;
-    }
-
-    public void setGradeNumber(int gradeNumber) {
-        this.gradeNumber = gradeNumber;
-    }
 }

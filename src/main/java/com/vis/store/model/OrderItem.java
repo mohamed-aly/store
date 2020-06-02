@@ -3,10 +3,12 @@ package com.vis.store.model;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
 
+@Data
 @Entity
 @Table(name = "order_item")
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -41,61 +43,5 @@ public class OrderItem implements Serializable {
     @JsonBackReference
     private Order order;
 
-    public OrderItem() {
 
-    }
-
-    public OrderItem(int id, Product product){
-        this.product=product;
-        this.id=id;
-    }
-
-    public Product getProduct() {
-        return product;
-    }
-
-    public void setProduct(Product product) {
-        this.product = product;
-    }
-
-
-    public int getQuantity() {
-        return quantity;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
-    }
-
-    public double getPricePerUnit() {
-        return pricePerUnit;
-    }
-
-    public void setPricePerUnit(double pricePerUnit) {
-        this.pricePerUnit = pricePerUnit;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public ClassifiedProduct getClassifiedProduct() {
-        return classifiedProduct;
-    }
-
-    public void setClassifiedProduct(ClassifiedProduct classifiedProduct) {
-        this.classifiedProduct = classifiedProduct;
-    }
-
-    public Order getOrder() {
-        return order;
-    }
-
-    public void setOrder(Order order) {
-        this.order = order;
-    }
 }
