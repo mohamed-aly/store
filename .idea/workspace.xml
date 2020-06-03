@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c01a1f11-0e40-4b68-8988-dc488fb7657e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/guru_database_create.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-prod.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_atteo_evo_inflector_1_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_rest_2_3_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_rest_core_3_3_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_rest_webmvc_3_3_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_hateoas_spring_hateoas_1_1_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_2_0_0_RELEASE.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/dao/CategoryDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/dao/CategoryDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stationery-store-db/ss_db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/stationery-store-db/ss_db.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/store.iml" beforeDir="false" afterPath="$PROJECT_DIR$/store.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +88,6 @@
     <configuration name="StoreApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="store" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.vis.store.StoreApplication" />
-      <option name="ACTIVE_PROFILES" value="dev" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -131,7 +119,7 @@
       <workItem from="1591084702173" duration="817000" />
       <workItem from="1591085604533" duration="81000" />
       <workItem from="1591085716121" duration="17310000" />
-      <workItem from="1591171879986" duration="8044000" />
+      <workItem from="1591171879986" duration="9864000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1591087391383</created>
@@ -182,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591173991215</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add MySQL configuration. Closes #5">
+      <created>1591186274827</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1591186274827</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,7 +193,8 @@
     <MESSAGE value="Fixed services. Closes #3" />
     <MESSAGE value="added circle ci configuration. Closes #8" />
     <MESSAGE value="fixed circleci configurations" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed circleci configurations" />
+    <MESSAGE value="add MySQL configuration. Closes #5" />
+    <option name="LAST_COMMIT_MESSAGE" value="add MySQL configuration. Closes #5" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="23" key="#Assign_Data_Sources" timestamp="1591171994276">
@@ -213,10 +209,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="23" key="#SQL_Dialects/0.0.1366.728@0.0.1366.728" timestamp="1591165905593" />
-    <state x="274" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591182024096">
+    <state x="274" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591188135277">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="274" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1591182024096" />
+    <state x="274" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1591188135277" />
     <state x="488" y="49" key="#com.intellij.ide.util.MemberChooser" timestamp="1591099944976">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -229,10 +225,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="479" y="245" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1366.728@0.0.1366.728" timestamp="1591093754165" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1591173987900">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1591186305942">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1591173987900" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1591186305942" />
     <state x="463" y="106" key="FileChooserDialogImpl" timestamp="1591088014651">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -245,46 +241,46 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="352" y="70" key="Github.UntrackedFilesDialog/0.0.1366.728@0.0.1366.728" timestamp="1591086837827" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1591185265035">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1591188151377">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591185265035" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1591185265035">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591188151377" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1591188151377">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591185265035" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1591185265035">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591188151377" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1591188151376">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591185265035" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1591185265035">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591188151376" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1591188151377">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591185265035" />
-    <state width="1323" height="179" key="GridCell.Tab.1.bottom" timestamp="1591185265036">
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591188151377" />
+    <state width="1323" height="179" key="GridCell.Tab.1.bottom" timestamp="1591188151378">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591185265036" />
-    <state width="1323" height="179" key="GridCell.Tab.1.center" timestamp="1591185265035">
+    <state width="1323" height="179" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591188151378" />
+    <state width="1323" height="179" key="GridCell.Tab.1.center" timestamp="1591188151377">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1591185265035" />
-    <state width="1323" height="179" key="GridCell.Tab.1.left" timestamp="1591185265035">
+    <state width="1323" height="179" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1591188151377" />
+    <state width="1323" height="179" key="GridCell.Tab.1.left" timestamp="1591188151377">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1591185265035" />
-    <state width="1323" height="179" key="GridCell.Tab.1.right" timestamp="1591185265036">
+    <state width="1323" height="179" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1591188151377" />
+    <state width="1323" height="179" key="GridCell.Tab.1.right" timestamp="1591188151377">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1591185265036" />
+    <state width="1323" height="179" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1591188151377" />
     <state width="267" height="457" key="HiddenNamespacesPopup" timestamp="1591171334734">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="267" height="457" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1591171334734" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1591173993615">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1591186340294">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1591173993615" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1591186340294" />
     <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1591171882619">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
