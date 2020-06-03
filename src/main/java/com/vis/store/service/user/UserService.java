@@ -1,14 +1,17 @@
 package com.vis.store.service.user;
 
 
+import com.vis.store.model.User;
+
+import java.util.Set;
 
 public interface UserService {
 
-    //create
+    User save(User user);
 
-    //read
+    User findById(Long l);
 
-    //Update
+    Set<User> findAll();
 
-    //Delete
+    void deleteById(Long idToDelete);
 }

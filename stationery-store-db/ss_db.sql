@@ -1,9 +1,33 @@
-CREATE USER 'admin'@'localhost' IDENTIFIED BY 'admin';
-GRANT ALL PRIVILEGES ON *.* TO 'admin'@'localhost';
+--create databases
+CREATE database `ss_dev`;
+CREATE database `ss_prod`;
 
-DROP database IF EXISTS `stationery-store-db`;
-CREATE database `stationery-store-db`;
-use `stationery-store-db`;
+--create user
+CREATE USER 'ss_dev_user'@'localhost' IDENTIFIED BY 'password';
+CREATE USER 'ss_prod_user'@'localhost' IDENTIFIED BY 'password';
+CREATE USER 'ss_dev_user'@'%' IDENTIFIED BY 'password';
+CREATE USER 'ss_prod_user'@'%' IDENTIFIED BY 'password';
+
+--database grants
+GRANT Select ON ss_dev.* TO 'ss_dev_user'@'localhost';
+GRANT delete ON ss_dev.* TO 'ss_dev_user'@'localhost';
+GRANT update ON ss_dev.* TO 'ss_dev_user'@'localhost';
+GRANT insert ON ss_dev.* TO 'ss_dev_user'@'localhost';
+GRANT Select ON ss_prod.* TO 'ss_prod_user'@'localhost';
+GRANT insert ON ss_prod.* TO 'ss_prod_user'@'localhost';
+GRANT delete ON ss_prod.* TO 'ss_prod_user'@'localhost';
+GRANT update ON ss_prod.* TO 'ss_prod_user'@'localhost';
+GRANT Select ON ss_dev.* TO 'ss_dev_user'@'%';
+GRANT delete ON ss_dev.* TO 'ss_dev_user'@'%';
+GRANT update ON ss_dev.* TO 'ss_dev_user'@'%';
+GRANT insert ON ss_dev.* TO 'ss_dev_user'@'%';
+GRANT Select ON ss_prod.* TO 'ss_prod_user'@'%';
+GRANT insert ON ss_prod.* TO 'ss_prod_user'@'%';
+GRANT delete ON ss_prod.* TO 'ss_prod_user'@'%';
+GRANT update ON ss_prod.* TO 'ss_prod_user'@'%';
+
+--use developing database
+use `ss_dev`;
 
 SET FOREIGN_KEY_CHECKS = 0;
 

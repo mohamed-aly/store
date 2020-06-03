@@ -1,15 +1,18 @@
 package com.vis.store.service.cart;
 
 
+import com.vis.store.model.Cart;
+
+import java.util.Set;
 
 public interface CartService {
 
-    //create
+    Cart save(Cart cart);
 
-    //read
+    Cart findById(Long l);
 
-    //Update
+    Set<Cart> findAll();
 
-    //Delete
+    void deleteById(Long idToDelete);
 
 }
