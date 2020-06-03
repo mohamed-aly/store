@@ -1,14 +1,14 @@
---create databases
+-- create databases
 CREATE database `ss_dev`;
 CREATE database `ss_prod`;
 
---create user
+-- create user
 CREATE USER 'ss_dev_user'@'localhost' IDENTIFIED BY 'password';
 CREATE USER 'ss_prod_user'@'localhost' IDENTIFIED BY 'password';
 CREATE USER 'ss_dev_user'@'%' IDENTIFIED BY 'password';
 CREATE USER 'ss_prod_user'@'%' IDENTIFIED BY 'password';
 
---database grants
+-- database grants
 GRANT Select ON ss_dev.* TO 'ss_dev_user'@'localhost';
 GRANT delete ON ss_dev.* TO 'ss_dev_user'@'localhost';
 GRANT update ON ss_dev.* TO 'ss_dev_user'@'localhost';
@@ -26,7 +26,7 @@ GRANT insert ON ss_prod.* TO 'ss_prod_user'@'%';
 GRANT delete ON ss_prod.* TO 'ss_prod_user'@'%';
 GRANT update ON ss_prod.* TO 'ss_prod_user'@'%';
 
---use developing database
+-- use developing database
 use `ss_dev`;
 
 SET FOREIGN_KEY_CHECKS = 0;

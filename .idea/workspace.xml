@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c01a1f11-0e40-4b68-8988-dc488fb7657e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/controller/AppRestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/model/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/model/Cart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/CartItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/model/CartItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/model/Category.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/ClassifiedProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/model/ClassifiedProduct.java" afterDir="false" />
@@ -26,13 +25,9 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/Shipper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/model/Shipper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/UserType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/model/UserType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/address/AddressService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/service/address/AddressService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/address/AddressServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/service/address/AddressServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/cart/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/service/cart/CartService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/cart/CartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/service/cart/CartServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/service/user/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/user/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/service/user/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stationery-store-db/stationery-store-db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/stationery-store-db/ss_db.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/orderDetails/OrderDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/service/orderDetails/OrderDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stationery-store-db/ss_db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/stationery-store-db/ss_db.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store.iml" beforeDir="false" afterPath="$PROJECT_DIR$/store.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +45,12 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="ss_dev@127.0.0.1" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -62,6 +62,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="E:\developer\my projects\store\.idea" />
+      </set>
+    </option>
   </component>
   <component name="ProjectId" id="1cktx9YUi2gD0Y56aQoYR2GW589" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -85,7 +92,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.circleci" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
@@ -93,6 +100,7 @@
       <recent name="com.vis.store" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\developer\my projects\store\.circleci" />
       <recent name="E:\developer\my projects\store\src\main\java\com\vis\store" />
     </key>
   </component>
@@ -110,12 +118,7 @@
       <list>
         <serviceView>
           <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:@127.0.0.1" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </treeState>
         </serviceView>
@@ -134,7 +137,8 @@
       <updated>1591084670829</updated>
       <workItem from="1591084702173" duration="817000" />
       <workItem from="1591085604533" duration="81000" />
-      <workItem from="1591085716121" duration="16057000" />
+      <workItem from="1591085716121" duration="17310000" />
+      <workItem from="1591171879986" duration="2068000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1591087391383</created>
@@ -171,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591097876156</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added circle ci configuration. Closes #8">
+      <created>1591170675496</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1591170675496</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,9 +196,14 @@
     <MESSAGE value="Added BaseEntities. Closes #11" />
     <MESSAGE value="Added DAOs. Closes #2" />
     <MESSAGE value="Fixed services. Closes #3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed services. Closes #3" />
+    <MESSAGE value="added circle ci configuration. Closes #8" />
+    <option name="LAST_COMMIT_MESSAGE" value="added circle ci configuration. Closes #8" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="275" y="23" key="#Assign_Data_Sources" timestamp="1591171994276">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="23" key="#Assign_Data_Sources/0.0.1366.728@0.0.1366.728" timestamp="1591171994276" />
     <state x="275" y="23" key="#Plugins" timestamp="1591085580866">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -196,10 +212,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="23" key="#SQL_Dialects/0.0.1366.728@0.0.1366.728" timestamp="1591165905593" />
-    <state x="275" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591167634432">
+    <state x="275" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591172040939">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1591167634432" />
+    <state x="275" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1591172040939" />
     <state x="488" y="49" key="#com.intellij.ide.util.MemberChooser" timestamp="1591099944976">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -212,10 +228,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="479" y="245" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1366.728@0.0.1366.728" timestamp="1591093754165" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1591097873046">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1591170672891">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1591097873046" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1591170672891" />
     <state x="463" y="106" key="FileChooserDialogImpl" timestamp="1591088014651">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -228,46 +244,54 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="352" y="70" key="Github.UntrackedFilesDialog/0.0.1366.728@0.0.1366.728" timestamp="1591086837827" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1591100301062">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1591171844843">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591100301062" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1591100301062">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591171844843" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1591171844843">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591100301062" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1591100301061">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591171844843" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1591171844842">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591100301061" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1591100301062">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591171844842" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1591171844843">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591100301062" />
-    <state width="1323" height="179" key="GridCell.Tab.1.bottom" timestamp="1591100301063">
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591171844843" />
+    <state width="1323" height="179" key="GridCell.Tab.1.bottom" timestamp="1591171844845">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591100301063" />
-    <state width="1323" height="179" key="GridCell.Tab.1.center" timestamp="1591100301063">
+    <state width="1323" height="179" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591171844845" />
+    <state width="1323" height="179" key="GridCell.Tab.1.center" timestamp="1591171844844">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1591100301063" />
-    <state width="1323" height="179" key="GridCell.Tab.1.left" timestamp="1591100301063">
+    <state width="1323" height="179" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1591171844844" />
+    <state width="1323" height="179" key="GridCell.Tab.1.left" timestamp="1591171844844">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1591100301063" />
-    <state width="1323" height="179" key="GridCell.Tab.1.right" timestamp="1591100301063">
+    <state width="1323" height="179" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1591171844844" />
+    <state width="1323" height="179" key="GridCell.Tab.1.right" timestamp="1591171844844">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1591100301063" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1591097877629">
+    <state width="1323" height="179" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1591171844844" />
+    <state width="267" height="457" key="HiddenNamespacesPopup" timestamp="1591171334734">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1591097877629" />
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1591085717339">
+    <state width="267" height="457" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1591171334734" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1591170677292">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1591085717339" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1591170677292" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1591171882619">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1591171882619" />
+    <state x="447" y="83" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1591171445546">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="447" y="83" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.728@0.0.1366.728" timestamp="1591171445546" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1591085553636">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
