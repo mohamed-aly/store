@@ -1,30 +1,3 @@
--- create databases
-CREATE database `ss_dev`;
-CREATE database `ss_prod`;
-
--- create user
-CREATE USER 'ss_dev_user'@'localhost' IDENTIFIED BY 'password';
-CREATE USER 'ss_prod_user'@'localhost' IDENTIFIED BY 'password';
-CREATE USER 'ss_dev_user'@'%' IDENTIFIED BY 'password';
-CREATE USER 'ss_prod_user'@'%' IDENTIFIED BY 'password';
-
--- database grants
-GRANT Select ON ss_dev.* TO 'ss_dev_user'@'localhost';
-GRANT delete ON ss_dev.* TO 'ss_dev_user'@'localhost';
-GRANT update ON ss_dev.* TO 'ss_dev_user'@'localhost';
-GRANT insert ON ss_dev.* TO 'ss_dev_user'@'localhost';
-GRANT Select ON ss_prod.* TO 'ss_prod_user'@'localhost';
-GRANT insert ON ss_prod.* TO 'ss_prod_user'@'localhost';
-GRANT delete ON ss_prod.* TO 'ss_prod_user'@'localhost';
-GRANT update ON ss_prod.* TO 'ss_prod_user'@'localhost';
-GRANT Select ON ss_dev.* TO 'ss_dev_user'@'%';
-GRANT delete ON ss_dev.* TO 'ss_dev_user'@'%';
-GRANT update ON ss_dev.* TO 'ss_dev_user'@'%';
-GRANT insert ON ss_dev.* TO 'ss_dev_user'@'%';
-GRANT Select ON ss_prod.* TO 'ss_prod_user'@'%';
-GRANT insert ON ss_prod.* TO 'ss_prod_user'@'%';
-GRANT delete ON ss_prod.* TO 'ss_prod_user'@'%';
-GRANT update ON ss_prod.* TO 'ss_prod_user'@'%';
 
 -- use developing database
 use `ss_dev`;
@@ -33,9 +6,9 @@ SET FOREIGN_KEY_CHECKS = 0;
 
 CREATE TABLE `user`
 (
-    `id`            int(11) NOT NULL AUTO_INCREMENT,
-    `user_type_id`  int(11) NOT NULL,
-    `cart_id`       int(11)  Not NULL,
+    `id`            bigint NOT NULL AUTO_INCREMENT,
+    `user_type_id`  bigint NOT NULL,
+    `cart_id`       bigint  Not NULL,
     `first_name`    varchar(128) DEFAULT NULL,
     `last_name`     varchar(45)  DEFAULT NULL,
     `email`         varchar(45)  DEFAULT NULL,
@@ -53,8 +26,8 @@ CREATE TABLE `user`
 
 CREATE TABLE `address`
 (
-    `id`             int(11)     NOT NULL AUTO_INCREMENT,
-    `user_id`        int(11)     NOT NULL,
+    `id`             bigint     NOT NULL AUTO_INCREMENT,
+    `user_id`        bigint     NOT NULL,
     `building`       int(11)     NOT NULL,
     `apartment`      int(11)     NOT NULL,
     `street_details` varchar(45) NOT NULL,
@@ -70,7 +43,7 @@ CREATE TABLE `address`
 
 CREATE TABLE `user_type`
 (
-    `id`        int(11)     NOT NULL AUTO_INCREMENT,
+    `id`        bigint     NOT NULL AUTO_INCREMENT,
     `user_type` varchar(45) NOT NULL,
     PRIMARY KEY (`id`)
 ) ENGINE = InnoDB
@@ -80,8 +53,8 @@ CREATE TABLE `user_type`
 
 CREATE TABLE `product`
 (
-    `id`          int(11)      NOT NULL AUTO_INCREMENT,
-    `category_id` int(11)      NOT NULL,
+    `id`          bigint      NOT NULL AUTO_INCREMENT,
+    `category_id` bigint      NOT NULL,
     `name`        varchar(45)  NOT NULL,
     `description` varchar(250) NOT NULL,
     `min_stock`   int(11)      NOT NULL,
@@ -94,7 +67,7 @@ CREATE TABLE `product`
 
 CREATE TABLE `category`
 (
-    `id`          int(11)      NOT NULL AUTO_INCREMENT,
+    `id`          bigint      NOT NULL AUTO_INCREMENT,
     `name`        varchar(128) NOT NULL,
     `image_url`   varchar(250) NOT NULL default 'https://blueskystores.com/wp-content/uploads/artist-group.jpg',
     `description` varchar(128) DEFAULT NULL,
@@ -106,8 +79,8 @@ CREATE TABLE `category`
 
 CREATE TABLE `product_images`
 (
-    `id`         int(11)      NOT NULL AUTO_INCREMENT,
-    `product_id` int(11)      NOT NULL,
+    `id`         bigint      NOT NULL AUTO_INCREMENT,
+    `product_id` bigint      NOT NULL,
     `image_url`  varchar(250) NOT NULL default 'https://cdn.shopify.com/s/files/1/0046/3421/4518/products/Sailor-1911S-Fountain-pen---Transparent-Demo---Gold-Trim---14k-Nib.jpg?v=1562348464',
     PRIMARY KEY (`id`),
     CONSTRAINT `FK_PRODUCT_PRODUCT_IMAGES` FOREIGN KEY (`product_id`) REFERENCES `product` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
@@ -118,9 +91,9 @@ CREATE TABLE `product_images`
 
 CREATE TABLE `offers`
 (
-    `id`         int(11) NOT NULL AUTO_INCREMENT,
-    `product_id` int(11) NOT NULL,
-    `discount`   int(11) NOT NULL,
+    `id`         bigint NOT NULL AUTO_INCREMENT,
+    `product_id` bigint NOT NULL,
+    `discount`   double NOT NULL,
     `start_date` date    NOT NULL,
     `end_date`   date    NOT NULL,
     PRIMARY KEY (`id`),
@@ -132,12 +105,12 @@ CREATE TABLE `offers`
 
 CREATE TABLE `product_patch`
 (
-    `id`               int(11) NOT NULL AUTO_INCREMENT,
-    `user_id`         int(11) NOT NULL,
-    `product_id`       int(11) NOT NULL,
+    `id`               bigint NOT NULL AUTO_INCREMENT,
+    `user_id`         bigint NOT NULL,
+    `product_id`       bigint NOT NULL,
     `quantity`         int(11) NOT NULL,
-    `purchasing_price` int(11) NOT NULL,
-    `selling_price`    int(11) NOT NULL,
+    `purchasing_price` double NOT NULL,
+    `selling_price`    double NOT NULL,
     `date_in`          date    NOT NULL,
     PRIMARY KEY (`id`),
     CONSTRAINT `FK_ADMIN_PRODUCT_PATCHES` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
@@ -149,7 +122,7 @@ CREATE TABLE `product_patch`
 
 CREATE TABLE `grade_level`
 (
-    `id`    int(11)     NOT NULL AUTO_INCREMENT,
+    `id`    bigint     NOT NULL AUTO_INCREMENT,
     `level` varchar(45) NOT NULL,
     PRIMARY KEY (`id`)
 ) ENGINE = InnoDB
@@ -158,8 +131,8 @@ CREATE TABLE `grade_level`
 
 CREATE TABLE `grade`
 (
-    `id`           int(11) NOT NULL AUTO_INCREMENT,
-    `grade_level`  int(11) NOT NULL,
+    `id`           bigint NOT NULL AUTO_INCREMENT,
+    `grade_level`  bigint NOT NULL,
     `grade_number` int(11) NOT NULL,
     PRIMARY KEY (`id`),
     CONSTRAINT `FK_GRADE_LEVEL_GRADE` FOREIGN KEY (`grade_level`) REFERENCES `grade_level` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
@@ -170,9 +143,9 @@ CREATE TABLE `grade`
 
 CREATE TABLE `classified_product`
 (
-    `id`         int(11) NOT NULL AUTO_INCREMENT,
-    `grade_id`   int(11) NOT NULL,
-    `product_id` int(11) NOT NULL,
+    `id`         bigint NOT NULL AUTO_INCREMENT,
+    `grade_id`   bigint NOT NULL,
+    `product_id` bigint NOT NULL,
     `quantity`   int(11) NOT NULL,
     PRIMARY KEY (`id`),
     CONSTRAINT `FK_GRADE_CLASSIFIED_PRODUCT` FOREIGN KEY (`grade_id`) REFERENCES `grade` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
@@ -184,7 +157,7 @@ CREATE TABLE `classified_product`
 
 CREATE TABLE `order_status`
 (
-    `id`     int(11)     NOT NULL AUTO_INCREMENT,
+    `id`     bigint     NOT NULL AUTO_INCREMENT,
     `status` varchar(45) NOT NULL,
     PRIMARY KEY (`id`)
 ) ENGINE = InnoDB
@@ -193,10 +166,10 @@ CREATE TABLE `order_status`
 
 CREATE TABLE `shipper`
 (
-    `id`            int(11)     NOT NULL AUTO_INCREMENT,
+    `id`            bigint     NOT NULL AUTO_INCREMENT,
     `name`          varchar(45) NOT NULL,
     `phone_number`  varchar(45) NOT NULL,
-    `shipping_fees` int(11)     NOT NULL,
+    `shipping_fees` double     NOT NULL,
     `status`        boolean     NOT NULL,
     PRIMARY KEY (`id`)
 ) ENGINE = InnoDB
@@ -205,9 +178,9 @@ CREATE TABLE `shipper`
 
 CREATE TABLE `orders`
 (
-    `id`                      int(11) NOT NULL AUTO_INCREMENT,
-    `order_status_id`         int(11) NOT NULL,
-    `shipper_id`              int(11) NOT NULL,
+    `id`                      bigint NOT NULL AUTO_INCREMENT,
+    `order_status_id`         bigint NOT NULL,
+    `shipper_id`              bigint NOT NULL,
     `submit_date`             date    NOT NULL,
     `estimated_days`          int(11) NOT NULL,
     `delivery_date`           date    NOT NULL,
@@ -221,12 +194,12 @@ CREATE TABLE `orders`
 
 CREATE TABLE `order_item`
 (
-    `id`                    int(11) NOT NULL AUTO_INCREMENT,
-    `product_id`            int(11) NOT NULL,
-    `classified_product_id` int(11) DEFAULT NULL,
-    `order_id`              int(11) NOT NULL,
+    `id`                    bigint NOT NULL AUTO_INCREMENT,
+    `product_id`            bigint NOT NULL,
+    `classified_product_id` bigint DEFAULT NULL,
+    `order_id`              bigint NOT NULL,
     `quantity`              int(11) NOT NULL,
-    `price_per_unit`        int(11) NOT NULL,
+    `price_per_unit`        double NOT NULL,
     PRIMARY KEY (`id`),
     CONSTRAINT `FK_PRODUCT_ORDER_ITEM` FOREIGN KEY (`product_id`) REFERENCES `product` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
     CONSTRAINT `FK_CLASSIFIED_PRODUCT_ORDER_ITEM` FOREIGN KEY (`classified_product_id`) REFERENCES `classified_product` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
@@ -237,10 +210,10 @@ CREATE TABLE `order_item`
 
 CREATE TABLE `order_details`
 (
-    `id`         int(11) NOT NULL AUTO_INCREMENT,
-    `user_id`    int(11) NOT NULL,
-    `order_id`   int(11) NOT NULL,
-    `address_id` int(11) NOT NULL,
+    `id`         bigint NOT NULL AUTO_INCREMENT,
+    `user_id`    bigint NOT NULL,
+    `order_id`   bigint NOT NULL,
+    `address_id` bigint NOT NULL,
     PRIMARY KEY (`id`),
     CONSTRAINT `FK_USER_ORDER_DETAILS` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
     CONSTRAINT `FK_ORDER_ORDER_DETAILS` FOREIGN KEY (`order_id`) REFERENCES `order` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
@@ -251,7 +224,7 @@ CREATE TABLE `order_details`
 
 CREATE TABLE `cart`
 (
-    `id`      int(11) NOT NULL AUTO_INCREMENT,
+    `id`      bigint NOT NULL AUTO_INCREMENT,
     `last_update` date NOT NULL,
     PRIMARY KEY (`id`)
 ) ENGINE = InnoDB
@@ -260,9 +233,9 @@ CREATE TABLE `cart`
 
 CREATE TABLE `cart_item`
 (
-    `id`         int(11) NOT NULL AUTO_INCREMENT,
-    `product_id` int(11) NOT NULL,
-    `cart_id`    int(11) NOT NULL,
+    `id`         bigint NOT NULL AUTO_INCREMENT,
+    `product_id` bigint NOT NULL,
+    `cart_id`    bigint NOT NULL,
     `quantity`   int(11) NOT NULL,
     PRIMARY KEY (`id`),
     CONSTRAINT `FK_PRODUCT_CART_ITEM` FOREIGN KEY (`product_id`) REFERENCES `product` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,

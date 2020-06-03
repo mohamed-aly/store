@@ -21,7 +21,7 @@ public class UserController {
         this.userService = userService;
     }
 
-    @GetMapping("all")
+    @GetMapping("/all")
     public Set<User> getUser(){
         return userService.findAll();
     }
