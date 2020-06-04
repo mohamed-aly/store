@@ -116,7 +116,7 @@
       <workItem from="1591084702173" duration="817000" />
       <workItem from="1591085604533" duration="81000" />
       <workItem from="1591085716121" duration="17310000" />
-      <workItem from="1591171879986" duration="14139000" />
+      <workItem from="1591171879986" duration="14254000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1591087391383</created>
@@ -230,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591253751633</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="updated circleci config file v.4">
+      <created>1591253846857</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1591253846858</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,10 +293,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="479" y="245" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1366.728@0.0.1366.728" timestamp="1591093754165" />
-    <state x="466" y="0" key="CommitChangelistDialog2" timestamp="1591253750058">
+    <state x="466" y="0" key="CommitChangelistDialog2" timestamp="1591253845807">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="466" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1591253750058" />
+    <state x="466" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1591253845807" />
     <state x="463" y="106" key="FileChooserDialogImpl" timestamp="1591088014651">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -338,10 +345,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="267" height="457" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1591171334734" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1591253754797">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1591253848474">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1591253754797" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1591253848474" />
     <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1591171882619">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
