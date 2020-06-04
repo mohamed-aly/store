@@ -7,7 +7,7 @@ jobs:
       - image: circleci/mysql:5.7
         environment:
           MYSQL_ROOT_PASSWORD: rootpw
-          MYSQL_DATABASE: test_db
+          MYSQL_DATABASE: ss_dev
           MYSQL_USER: ss_dev_user
           MYSQL_PASSWORD: password
     steps:
@@ -28,6 +28,6 @@ jobs:
             sudo rm -rf /var/lib/apt/lists/*
             sudo apt-get update
             sudo apt-get install mysql*
-            mysql -h 127.0.0.1 -u root -prootpw --execute="use test_db;"
+            mysql -h 127.0.0.1 -u root -prootpw --execute="use ss_dev;"
       - run:
           mvn test
