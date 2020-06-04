@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c01a1f11-0e40-4b68-8988-dc488fb7657e" name="Default Changelist" comment="">
+    <list default="true" id="c01a1f11-0e40-4b68-8988-dc488fb7657e" name="Default Changelist" comment="updated circleci config file v.7">
       <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -116,7 +116,7 @@
       <workItem from="1591084702173" duration="817000" />
       <workItem from="1591085604533" duration="81000" />
       <workItem from="1591085716121" duration="17310000" />
-      <workItem from="1591171879986" duration="14847000" />
+      <workItem from="1591171879986" duration="15193000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1591087391383</created>
@@ -251,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591254353975</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="updated circleci config file v.7">
+      <created>1591254558844</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1591254558844</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,7 +285,8 @@
     <MESSAGE value="updated circleci config file v.4" />
     <MESSAGE value="updated circleci config file v.5" />
     <MESSAGE value="updated circleci config file v.6" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated circleci config file v.6" />
+    <MESSAGE value="updated circleci config file v.7" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated circleci config file v.7" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="23" key="#Assign_Data_Sources" timestamp="1591171994276">
@@ -309,10 +317,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="479" y="245" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1366.728@0.0.1366.728" timestamp="1591093754165" />
-    <state x="466" y="0" key="CommitChangelistDialog2" timestamp="1591254352883">
+    <state x="466" y="0" key="CommitChangelistDialog2" timestamp="1591254884927">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="466" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1591254352883" />
+    <state x="466" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1591254884927" />
     <state x="463" y="106" key="FileChooserDialogImpl" timestamp="1591088014651">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -361,10 +369,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="267" height="457" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1591171334734" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1591254356621">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1591254560613">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1591254356621" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1591254560613" />
     <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1591171882619">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
