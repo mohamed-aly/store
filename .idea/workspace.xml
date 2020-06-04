@@ -116,7 +116,7 @@
       <workItem from="1591084702173" duration="817000" />
       <workItem from="1591085604533" duration="81000" />
       <workItem from="1591085716121" duration="17310000" />
-      <workItem from="1591171879986" duration="15431000" />
+      <workItem from="1591171879986" duration="15712000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1591087391383</created>
@@ -265,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591254900433</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="updated circleci config file v.9">
+      <created>1591255139210</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1591255139210</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,7 +301,8 @@
     <MESSAGE value="updated circleci config file v.6" />
     <MESSAGE value="updated circleci config file v.7" />
     <MESSAGE value="updated circleci config file v.8" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated circleci config file v.8" />
+    <MESSAGE value="updated circleci config file v.9" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated circleci config file v.9" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="23" key="#Assign_Data_Sources" timestamp="1591171994276">
@@ -325,10 +333,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="479" y="245" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1366.728@0.0.1366.728" timestamp="1591093754165" />
-    <state x="466" y="0" key="CommitChangelistDialog2" timestamp="1591254899235">
+    <state x="466" y="0" key="CommitChangelistDialog2" timestamp="1591255138131">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="466" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1591254899235" />
+    <state x="466" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1591255138131" />
     <state x="463" y="106" key="FileChooserDialogImpl" timestamp="1591088014651">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -377,10 +385,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="267" height="457" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1591171334734" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1591254905397">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1591255140903">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1591254905397" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1591255140903" />
     <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1591171882619">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
