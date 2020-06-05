@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
@@ -13,6 +14,7 @@ import java.util.Set;
 
 @Getter
 @Setter
+@RequiredArgsConstructor
 @Entity
 @Table(name = "user")
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -30,7 +32,7 @@ public class User extends BaseEntity {
     private String firstName;
 
     @Column(name = "last_name")
-    private String last_name;
+    private String lastName;
 
     @Column(name = "phone_number1")
     private String phoneNumber1;
@@ -48,15 +50,20 @@ public class User extends BaseEntity {
     @JsonManagedReference
     private Set<Address> addresses;
 
-    @OneToMany(mappedBy = "user",
-            cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.DETACH, CascadeType.REFRESH})
+    @OneToMany(mappedBy = "user")
     @JsonManagedReference
     private Set<OrderDetails> ordersDetails;
 
-    @OneToOne(fetch = FetchType.LAZY,
-            cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.DETACH, CascadeType.REFRESH})
+    @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "cart_id")
     private Cart cart;
+
+    public User(Long id, String firstName, String lastName, Set<Address> addresses) {
+        this.setId(id);
+        this.firstName=firstName;
+        this.lastName=lastName;
+        this.addresses=addresses;
+    }
 
 
 }

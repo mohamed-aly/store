@@ -8,6 +8,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+
+import java.sql.Date;
 import java.util.List;
 
 @Getter
@@ -19,6 +21,8 @@ import java.util.List;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 public class Cart extends BaseEntity {
 
+    @Column(name="last_update")
+    private Date lastUpdated;
 
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "cart_id")
