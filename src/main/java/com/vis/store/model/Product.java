@@ -14,7 +14,6 @@ import java.util.Set;
 @Setter
 @Entity
 @Table(name = "product")
-@JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 public class Product extends BaseEntity {
 
@@ -63,6 +62,6 @@ public class Product extends BaseEntity {
     @OneToMany(mappedBy = "product",
             cascade = CascadeType.ALL)
     @JsonManagedReference
-    private Set<ClassifiedProduct> packages;
+    private Set<Package> packages;
 
 }

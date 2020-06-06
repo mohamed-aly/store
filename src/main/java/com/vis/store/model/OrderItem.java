@@ -12,7 +12,6 @@ import javax.persistence.*;
 @Setter
 @Entity
 @Table(name = "order_item")
-@JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 public class OrderItem extends BaseEntity {
 
@@ -27,7 +26,7 @@ public class OrderItem extends BaseEntity {
             CascadeType.DETACH, CascadeType.REFRESH}, fetch = FetchType.LAZY)
     @JoinColumn(name = "classified_product_id")
     @JsonBackReference
-    private ClassifiedProduct classifiedProduct;
+    private Package classifiedProduct;
 
     @Column(name = "quantity")
     private int quantity;

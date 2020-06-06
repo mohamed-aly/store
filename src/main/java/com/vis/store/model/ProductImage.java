@@ -13,7 +13,6 @@ import javax.persistence.Table;
 @Setter
 @Entity
 @Table(name = "product_images")
-@JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 public class ProductImage extends BaseEntity {
 

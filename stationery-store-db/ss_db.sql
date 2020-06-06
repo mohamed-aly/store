@@ -141,7 +141,7 @@ CREATE TABLE `grade`
   DEFAULT CHARSET = latin1;
 
 
-CREATE TABLE `classified_product`
+CREATE TABLE `package`
 (
     `id`         bigint NOT NULL AUTO_INCREMENT,
     `grade_id`   bigint NOT NULL,

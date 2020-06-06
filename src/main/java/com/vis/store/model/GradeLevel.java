@@ -13,7 +13,6 @@ import java.util.List;
 @Setter
 @Entity
 @Table(name = "grade_level")
-@JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 public class GradeLevel extends BaseEntity {
 

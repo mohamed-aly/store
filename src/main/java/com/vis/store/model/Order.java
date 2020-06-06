@@ -15,7 +15,6 @@ import java.util.List;
 @Setter
 @Entity
 @Table(name = "orders")
-@JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 public class Order extends BaseEntity {
 

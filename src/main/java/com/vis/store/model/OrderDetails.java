@@ -12,7 +12,6 @@ import javax.persistence.*;
 @Setter
 @Entity
 @Table(name = "order_details")
-@JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 public class OrderDetails extends BaseEntity {
 

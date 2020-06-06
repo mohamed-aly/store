@@ -13,10 +13,9 @@ import java.util.List;
 @Getter
 @Setter
 @Entity
-@Table(name = "classified_product")
-@JsonIgnoreProperties(ignoreUnknown = true)
+@Table(name = "package")
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
-public class ClassifiedProduct extends BaseEntity {
+public class Package extends BaseEntity {
 
 
     @Column(name = "quantity")

@@ -13,7 +13,6 @@ import java.sql.Date;
 @Setter
 @Entity
 @Table(name = "product_patch")
-@JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 public class ProductPatch extends BaseEntity {
 

@@ -1,24 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c01a1f11-0e40-4b68-8988-dc488fb7657e" name="Default Changelist" comment="updated circleci config file v.10">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_hibernate5_2_11_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_3_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_3_2_RELEASE.xml" beforeDir="false" />
+    <list default="true" id="c01a1f11-0e40-4b68-8988-dc488fb7657e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/stationery-store-db/configure-mysql.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/dao/ClassifiedProductDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/dao/ClassifiedProductDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/dao/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/model/Address.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/model/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/CartItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/model/CartItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/model/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/ClassifiedProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/model/Package.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/Grade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/model/Grade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/GradeLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/model/GradeLevel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/Offer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/model/Offer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/model/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/OrderDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/model/OrderDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/model/OrderItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/OrderStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/model/OrderStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/ProductImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/model/ProductImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/ProductPatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/model/ProductPatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/Shipper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/model/Shipper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/UserType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/model/UserType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/product/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/service/product/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/user/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/service/user/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store.iml" beforeDir="false" afterPath="$PROJECT_DIR$/store.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stationery-store-db/ss_db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/stationery-store-db/ss_db.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +172,8 @@
       <workItem from="1591085604533" duration="81000" />
       <workItem from="1591085716121" duration="17310000" />
       <workItem from="1591171879986" duration="21184000" />
-      <workItem from="1591261407304" duration="2997000" />
+      <workItem from="1591261407304" duration="3844000" />
+      <workItem from="1591426858675" duration="2559000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1591087391383</created>
@@ -328,7 +336,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591255428471</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="added hibernate5 module">
+      <created>1591358935892</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1591358935892</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,7 +374,8 @@
     <MESSAGE value="updated circleci config file v.8" />
     <MESSAGE value="updated circleci config file v.9" />
     <MESSAGE value="updated circleci config file v.10" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated circleci config file v.10" />
+    <MESSAGE value="added hibernate5 module" />
+    <option name="LAST_COMMIT_MESSAGE" value="added hibernate5 module" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="23" key="#Assign_Data_Sources" timestamp="1591171994276">
@@ -390,10 +406,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="479" y="245" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1366.728@0.0.1366.728" timestamp="1591093754165" />
-    <state x="456" y="0" key="CommitChangelistDialog2" timestamp="1591358819213">
+    <state x="186" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1591444404475">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="456" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1591358819213" />
+    <state x="186" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1591444404475" />
+    <state x="456" y="0" key="CommitChangelistDialog2" timestamp="1591358930927">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="456" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1591358930927" />
     <state x="463" y="106" key="FileChooserDialogImpl" timestamp="1591088014651">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -406,50 +426,50 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="352" y="70" key="Github.UntrackedFilesDialog/0.0.1366.728@0.0.1366.728" timestamp="1591086837827" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1591358843219">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1591445612513">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591358843219" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1591358843218">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591445612513" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1591445612513">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591358843218" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1591358843218">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591445612513" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1591445612513">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591358843218" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1591358843218">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591445612513" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1591445612513">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591358843218" />
-    <state width="1323" height="179" key="GridCell.Tab.1.bottom" timestamp="1591358824888">
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591445612513" />
+    <state width="1323" height="179" key="GridCell.Tab.1.bottom" timestamp="1591445612514">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591358824888" />
-    <state width="1323" height="179" key="GridCell.Tab.1.center" timestamp="1591358824888">
+    <state width="1323" height="179" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591445612514" />
+    <state width="1323" height="179" key="GridCell.Tab.1.center" timestamp="1591445612514">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1591358824888" />
-    <state width="1323" height="179" key="GridCell.Tab.1.left" timestamp="1591358824888">
+    <state width="1323" height="179" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1591445612514" />
+    <state width="1323" height="179" key="GridCell.Tab.1.left" timestamp="1591445612513">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1591358824888" />
-    <state width="1323" height="179" key="GridCell.Tab.1.right" timestamp="1591358824888">
+    <state width="1323" height="179" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1591445612513" />
+    <state width="1323" height="179" key="GridCell.Tab.1.right" timestamp="1591445612514">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1591358824888" />
+    <state width="1323" height="179" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1591445612514" />
     <state width="267" height="457" key="HiddenNamespacesPopup" timestamp="1591171334734">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="267" height="457" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1591171334734" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1591255430630">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1591358945003">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1591255430630" />
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1591261425534">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1591358945003" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1591426866855">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1591261425534" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1591426866855" />
     <state x="447" y="83" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1591171445546">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

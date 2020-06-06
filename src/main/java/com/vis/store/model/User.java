@@ -17,7 +17,6 @@ import java.util.Set;
 @RequiredArgsConstructor
 @Entity
 @Table(name = "user")
-@JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 public class User extends BaseEntity {
 

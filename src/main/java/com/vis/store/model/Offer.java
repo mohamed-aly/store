@@ -13,7 +13,6 @@ import java.util.Date;
 @Setter
 @Entity
 @Table(name = "offers")
-@JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 public class Offer extends BaseEntity {
 

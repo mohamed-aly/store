@@ -13,7 +13,6 @@ import java.util.Set;
 @Setter
 @Entity
 @Table(name = "user_type")
-@JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 public class UserType extends BaseEntity {
 

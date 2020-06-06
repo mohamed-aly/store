@@ -14,14 +14,13 @@ import java.util.List;
 @Setter
 @Entity
 @Table(name = "grade")
-@JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 public class Grade extends BaseEntity{
 
     @OneToMany(mappedBy = "grade",
             cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.DETACH, CascadeType.REFRESH})
     @JsonManagedReference
-    private List<ClassifiedProduct> classifiedProducts;
+    private List<Package> classifiedProducts;
 
     @ManyToOne(fetch = FetchType.LAZY,
             cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.DETACH, CascadeType.REFRESH})
