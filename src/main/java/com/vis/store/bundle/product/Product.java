@@ -3,13 +3,13 @@ package com.vis.store.bundle.product;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.vis.store.bundle.BaseEntity;
-import com.vis.store.bundle.productImage.ProductImage;
-import com.vis.store.bundle.productPatch.ProductPatch;
 import com.vis.store.bundle.cartItem.CartItem;
 import com.vis.store.bundle.category.Category;
 import com.vis.store.bundle.offer.Offer;
 import com.vis.store.bundle.orderItem.OrderItem;
 import com.vis.store.bundle.packages.Package;
+import com.vis.store.bundle.productImage.ProductImage;
+import com.vis.store.bundle.productPatch.ProductPatch;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.Where;
@@ -43,9 +43,9 @@ public class Product extends BaseEntity {
     @JsonManagedReference
     private Set<OrderItem> orders;
 
-    @OneToMany(
-            cascade = CascadeType.ALL)
-    @JoinColumn(name = "product_id")
+    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
+    @OrderBy("id")
+    @JsonManagedReference
     private Set<ProductImage> imageUrl;
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "product")

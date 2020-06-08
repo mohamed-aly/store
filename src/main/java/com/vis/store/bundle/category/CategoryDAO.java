@@ -1,6 +1,5 @@
 package com.vis.store.bundle.category;
 
-import com.vis.store.bundle.category.Category;
 import org.springframework.data.repository.CrudRepository;
 
 

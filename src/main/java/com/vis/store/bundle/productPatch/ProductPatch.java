@@ -3,8 +3,8 @@ package com.vis.store.bundle.productPatch;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.vis.store.bundle.BaseEntity;
-import com.vis.store.bundle.user.User;
 import com.vis.store.bundle.product.Product;
+import com.vis.store.bundle.user.User;
 import lombok.Getter;
 import lombok.Setter;
 

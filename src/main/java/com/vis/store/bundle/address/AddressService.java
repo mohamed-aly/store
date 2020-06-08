@@ -1,8 +1,6 @@
 package com.vis.store.bundle.address;
 
 
-import com.vis.store.bundle.address.Address;
-
 import java.util.Set;
 
 public interface AddressService {

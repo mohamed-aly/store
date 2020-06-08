@@ -1,8 +1,6 @@
 package com.vis.store.bundle.cart;
 
 
-import com.vis.store.bundle.cart.Cart;
-
 import java.util.Set;
 
 public interface CartService {

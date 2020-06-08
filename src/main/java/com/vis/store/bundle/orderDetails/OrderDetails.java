@@ -3,9 +3,9 @@ package com.vis.store.bundle.orderDetails;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.vis.store.bundle.BaseEntity;
-import com.vis.store.bundle.user.User;
 import com.vis.store.bundle.address.Address;
 import com.vis.store.bundle.order.Order;
+import com.vis.store.bundle.user.User;
 import lombok.Getter;
 import lombok.Setter;
 

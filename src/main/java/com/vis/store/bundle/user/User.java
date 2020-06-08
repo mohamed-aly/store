@@ -4,13 +4,14 @@ import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.vis.store.bundle.BaseEntity;
-import com.vis.store.bundle.userType.UserType;
 import com.vis.store.bundle.address.Address;
 import com.vis.store.bundle.cart.Cart;
 import com.vis.store.bundle.orderDetails.OrderDetails;
+import com.vis.store.bundle.userType.UserType;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 import javax.persistence.*;
 import java.util.Set;
@@ -19,6 +20,7 @@ import java.util.Set;
 @Getter
 @Setter
 @RequiredArgsConstructor
+@ToString
 @Entity
 @Table(name = "user")
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
@@ -67,6 +69,5 @@ public class User extends BaseEntity {
         this.lastName=lastName;
         this.addresses=addresses;
     }
-
 
 }

@@ -2,87 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c01a1f11-0e40-4b68-8988-dc488fb7657e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/product/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/product/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/product/ProductHQL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/product/ProductHQLImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_3_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_test_5_3_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_3_2_RELEASE.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/address/AddressDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/address/AddressDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/address/AddressService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/address/AddressService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/cart/CartDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/cart/CartDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/cart/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/cart/CartService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/cartItem/CartItemDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/cartItem/CartItemDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/category/CategoryDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/category/CategoryDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/grade/GradeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/grade/GradeDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/gradeLevel/GradeLevelDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/gradeLevel/GradeLevelDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/offer/OfferDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/offer/OfferDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/order/OrderDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/order/OrderDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/orderDetails/OrderDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/orderDetails/OrderDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/orderDetails/OrderDetailsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/orderDetails/OrderDetailsDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/orderItem/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/orderItem/OrderItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/orderItem/OrderItemDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/orderItem/OrderItemDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/orderStatus/OrderStatusDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/orderStatus/OrderStatusDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/packages/Package.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/packages/Package.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/packages/PackageDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/packages/PackageDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/product/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/product/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/product/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/product/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/product/ProductDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/product/ProductDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/product/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/product/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/product/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/product/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/productImage/ProductImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/productImage/ProductImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/productImage/ProductImageDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/productImage/ProductImageDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/productPatch/ProductPatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/productPatch/ProductPatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/productPatch/ProductPatchDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/productPatch/ProductPatchDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/shipper/ShipperDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/shipper/ShipperDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/user/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/user/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/user/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/user/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/user/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/userType/UserTypeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/userType/UserTypeDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/config/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/product/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/user/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/dao/AddressDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/address/AddressDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/dao/CartDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/cart/CartDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/dao/CartItemDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/cartItem/CartItemDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/dao/CategoryDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/category/CategoryDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/dao/ClassifiedProductDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/packages/PackageDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/dao/GradeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/grade/GradeDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/dao/GradeLevelDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/gradeLevel/GradeLevelDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/dao/OfferDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/offer/OfferDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/dao/OrderDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/order/OrderDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/dao/OrderDetailsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/orderDetails/OrderDetailsDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/dao/OrderItemDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/orderItem/OrderItemDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/dao/OrderStatusDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/orderStatus/OrderStatusDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/dao/ProductDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/product/ProductDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/dao/ProductImageDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/productImage/ProductImageDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/dao/ProductPatchDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/productPatch/ProductPatchDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/dao/ShipperDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/shipper/ShipperDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/user/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/dao/UserTypeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/userType/UserTypeDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/address/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/cart/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/CartItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/cartItem/CartItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/category/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/Grade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/grade/Grade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/GradeLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/gradeLevel/GradeLevel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/Offer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/offer/Offer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/order/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/OrderDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/orderDetails/OrderDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/orderItem/OrderItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/OrderStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/orderStatus/OrderStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/Package.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/packages/Package.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/product/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/ProductImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/productImage/ProductImage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/ProductPatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/productPatch/ProductPatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/Shipper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/shipper/Shipper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/model/UserType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/userType/UserType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/address/AddressService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/address/AddressService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/address/AddressServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/address/AddressServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/cart/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/cart/CartService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/cart/CartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/cart/CartServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/cartItem/CartItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/cartItem/CartItemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/cartItem/CartItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/cartItem/CartItemServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/category/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/category/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/category/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/category/CategoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/classifiedProduct/ClassifiedProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/packages/PackageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/classifiedProduct/ClassifiedProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/packages/PackageServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/grade/GradeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/grade/GradeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/grade/GradeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/grade/GradeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/gradeLevel/GradeLevelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/gradeLevel/GradeLevelService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/gradeLevel/GradeLevelServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/gradeLevel/GradeLevelServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/offer/OfferService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/offer/OfferService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/offer/OfferServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/offer/OfferServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/order/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/order/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/order/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/order/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/orderDetails/OrderDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/orderDetails/OrderDetailsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/orderDetails/OrderDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/orderDetails/OrderDetailsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/orderItem/OrderItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/orderItem/OrderItemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/orderItem/OrderItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/orderItem/OrderItemServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/orderStatus/OrderStatusService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/orderStatus/OrderStatusService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/orderStatus/OrderStatusServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/orderStatus/OrderStatusServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/product/ProductService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/product/ProductServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/productImage/ProductImageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/productImage/ProductImageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/productImage/ProductImageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/productImage/ProductImageServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/productPatch/ProductPatchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/productPatch/ProductPatchService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/productPatch/ProductPatchServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/productPatch/ProductPatchServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/shipper/ShipperService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/shipper/ShipperService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/shipper/ShipperServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/shipper/ShipperServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/user/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/user/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/user/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/userType/UserTypeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/userType/UserTypeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/service/userType/UserTypeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/userType/UserTypeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/utilities/myUtils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/utilities/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stationery-store-db/ss_db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/stationery-store-db/ss_db.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store.iml" beforeDir="false" afterPath="$PROJECT_DIR$/store.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,6 +72,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -154,7 +116,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/vis/store/bundle" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/vis/store/config/security" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
@@ -164,11 +126,11 @@
       <recent name="com.vis.store" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\developer\my projects\store\src\main\java\com\vis\store\config\security" />
+      <recent name="E:\developer\my projects\store\src\main\java\com\vis\store\bundle\user" />
       <recent name="E:\developer\my projects\store\src\main\java\com\vis\store\bundle" />
       <recent name="E:\developer\my projects\store\src\main\java\com\vis\store\bundle\cart" />
       <recent name="E:\developer\my projects\store\src\main\resources" />
-      <recent name="E:\developer\my projects\store\.circleci" />
-      <recent name="E:\developer\my projects\store\src\main\java\com\vis\store" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -234,7 +196,8 @@
       <workItem from="1591171879986" duration="21184000" />
       <workItem from="1591261407304" duration="3844000" />
       <workItem from="1591426858675" duration="3400000" />
-      <workItem from="1591447745442" duration="8220000" />
+      <workItem from="1591447745442" duration="19544000" />
+      <workItem from="1591603557713" duration="9677000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1591087391383</created>
@@ -411,7 +374,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591445675152</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="updated project structure">
+      <created>1591519510482</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1591519510482</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -444,7 +414,8 @@
     <MESSAGE value="updated circleci config file v.10" />
     <MESSAGE value="added hibernate5 module" />
     <MESSAGE value="ALtered some entities" />
-    <option name="LAST_COMMIT_MESSAGE" value="ALtered some entities" />
+    <MESSAGE value="updated project structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated project structure" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="23" key="#Assign_Data_Sources" timestamp="1591171994276">
@@ -467,10 +438,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="274" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1591188135277" />
-    <state x="488" y="49" key="#com.intellij.ide.util.MemberChooser" timestamp="1591099944976">
+    <state x="488" y="49" key="#com.intellij.ide.util.MemberChooser" timestamp="1591617054243">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="49" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1591099944976" />
+    <state x="488" y="49" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1591617054243" />
     <state x="324" y="281" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1591093752251">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -487,10 +458,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="186" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1591519210970" />
-    <state x="456" y="0" key="CommitChangelistDialog2" timestamp="1591445671849">
+    <state x="183" y="0" key="CommitChangelistDialog2" timestamp="1591519504346">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="456" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1591445671849" />
+    <state x="183" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1591519504346" />
     <state x="463" y="106" key="FileChooserDialogImpl" timestamp="1591088014651">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -503,70 +474,74 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="352" y="70" key="Github.UntrackedFilesDialog/0.0.1366.728@0.0.1366.728" timestamp="1591086837827" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1591517815982">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1591619485052">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591517815982" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1591517815982">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591619485052" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1591619485051">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591517815982" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1591517815982">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591619485051" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1591619485051">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591517815982" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1591517815982">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591619485051" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1591619485052">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591517815982" />
-    <state width="1323" height="179" key="GridCell.Tab.1.bottom" timestamp="1591517815983">
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591619485051" />
+    <state width="1323" height="179" key="GridCell.Tab.1.bottom" timestamp="1591619485052">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591517815983" />
-    <state width="1323" height="179" key="GridCell.Tab.1.center" timestamp="1591517815983">
+    <state width="1323" height="179" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591619485052" />
+    <state width="1323" height="179" key="GridCell.Tab.1.center" timestamp="1591619485052">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1591517815983" />
-    <state width="1323" height="179" key="GridCell.Tab.1.left" timestamp="1591517815982">
+    <state width="1323" height="179" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1591619485052" />
+    <state width="1323" height="179" key="GridCell.Tab.1.left" timestamp="1591619485052">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1591517815982" />
-    <state width="1323" height="179" key="GridCell.Tab.1.right" timestamp="1591517815983">
+    <state width="1323" height="179" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1591619485052" />
+    <state width="1323" height="179" key="GridCell.Tab.1.right" timestamp="1591619485052">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1591517815983" />
-    <state width="1323" height="223" key="GridCell.Tab.2.bottom" timestamp="1591452809983">
+    <state width="1323" height="179" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1591619485052" />
+    <state width="1323" height="223" key="GridCell.Tab.2.bottom" timestamp="1591532724270">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591452809983" />
-    <state width="1323" height="223" key="GridCell.Tab.2.center" timestamp="1591452809983">
+    <state width="1323" height="223" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591532724270" />
+    <state width="1323" height="223" key="GridCell.Tab.2.center" timestamp="1591532724270">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1591452809983" />
-    <state width="1323" height="223" key="GridCell.Tab.2.left" timestamp="1591452809982">
+    <state width="1323" height="223" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1591532724270" />
+    <state width="1323" height="223" key="GridCell.Tab.2.left" timestamp="1591532724270">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1591452809982" />
-    <state width="1323" height="223" key="GridCell.Tab.2.right" timestamp="1591452809983">
+    <state width="1323" height="223" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1591532724270" />
+    <state width="1323" height="223" key="GridCell.Tab.2.right" timestamp="1591532724270">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1591452809983" />
+    <state width="1323" height="223" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1591532724270" />
     <state width="267" height="457" key="HiddenNamespacesPopup" timestamp="1591171334734">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="267" height="457" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1591171334734" />
+    <state x="213" y="20" key="Maven.ArtifactSearchDialog" timestamp="1591530162513">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="213" y="20" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1591530162513" />
     <state x="184" y="7" key="SettingsEditor" timestamp="1591452726585">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="7" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1591452726585" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1591445677159">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1591519512441">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1591445677159" />
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1591447755264">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1591519512441" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1591603583432">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1591447755264" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1591603583432" />
     <state x="447" y="83" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1591171445546">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

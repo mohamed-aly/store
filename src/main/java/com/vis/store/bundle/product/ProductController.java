@@ -26,7 +26,7 @@ public class ProductController {
 
     @GetMapping("/bestSellers")
     public Set<Product> getBestSellers(){
-        return productService.findBestSellers();
+        return productService.findBestByID();
     }
 
 }
