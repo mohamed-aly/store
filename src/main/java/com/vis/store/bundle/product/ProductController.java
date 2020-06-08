@@ -15,18 +15,19 @@ public class ProductController {
 
     private ProductService productService;
 
-    public ProductController(ProductService productService){
-        this.productService=productService;
+    public ProductController(ProductService productService) {
+        this.productService = productService;
     }
 
     @GetMapping("/all")
-    public Set<Product> getProducts(){
-        return productService.findAll();
+    public Set<Product> getProducts() {
+        Set<Product> productServiceAll = productService.findAll();
+        return productServiceAll;
     }
 
     @GetMapping("/bestSellers")
-    public Set<Product> getBestSellers(){
-        return productService.findBestByID();
+    public Set<Product> getBestSellers() {
+        return productService.findBestSellers();
     }
 
 }

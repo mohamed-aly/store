@@ -14,11 +14,10 @@ import java.util.Set;
 public class ProductServiceImpl implements ProductService {
 
     private final ProductDAO productDAO;
-    private final ProductHQL productHQL;
 
-    public ProductServiceImpl(ProductDAO productDAO, ProductHQL productHQL) {
+
+    public ProductServiceImpl(ProductDAO productDAO) {
         this.productDAO=productDAO;
-        this.productHQL = productHQL;
     }
 
     @Override
@@ -32,25 +31,10 @@ public class ProductServiceImpl implements ProductService {
         return productSet;
     }
 
-    @Override
-    @Transactional
-    public Set<Long> getBestSellers() {
-        log.debug("I'm in the product service");
-
-        Set<Long> productSet = new HashSet<>();
-        productHQL.getBestSellers().iterator().forEachRemaining(productSet::add);
-
-        return productSet;
-    }
 
     @Override
-    public List<Long> findBest() {
-        return productDAO.findBest();
-    }
-
-    @Override
-    public Set<Product> findBestByID() {
-        return productDAO.findBestAll();
+    public Set<Product> findBestSellers() {
+        return productDAO.findBestSellers();
     }
 }
 

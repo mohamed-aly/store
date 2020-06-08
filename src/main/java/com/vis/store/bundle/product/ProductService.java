@@ -7,6 +7,6 @@ public interface ProductService {
 
     Set<Product> findAll();
 
-    Set<Product> findBestByID();
+    Set<Product> findBestSellers();
 
 }
