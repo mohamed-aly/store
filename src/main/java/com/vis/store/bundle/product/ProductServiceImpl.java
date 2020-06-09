@@ -25,16 +25,15 @@ public class ProductServiceImpl implements ProductService {
     public Set<Product> findAll() {
         log.debug("I'm in the product service");
 
-        Set<Product> productSet = new HashSet<>();
-        productDAO.findAll().iterator().forEachRemaining(productSet::add);
-
-        return productSet;
+        Set<Product> productDAOAll = productDAO.findAll();
+        return productDAOAll;
     }
 
 
     @Override
     public Set<Product> findBestSellers() {
-        return productDAO.findBestSellers();
+        Long[] ids = productDAO.findBestSellersIds();
+        return productDAO.findBestSellers(ids);
     }
 }
 

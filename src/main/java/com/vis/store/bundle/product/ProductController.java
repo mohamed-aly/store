@@ -21,8 +21,7 @@ public class ProductController {
 
     @GetMapping("/all")
     public Set<Product> getProducts() {
-        Set<Product> productServiceAll = productService.findAll();
-        return productServiceAll;
+       return productService.findAll();
     }
 
     @GetMapping("/bestSellers")

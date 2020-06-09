@@ -11,6 +11,7 @@ import com.vis.store.bundle.packages.Package;
 import com.vis.store.bundle.productImage.ProductImage;
 import com.vis.store.bundle.productPatch.ProductPatch;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.Where;
 
@@ -19,6 +20,7 @@ import java.util.Set;
 
 @Getter
 @Setter
+@NoArgsConstructor
 @Entity
 @Table(name = "product")
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
@@ -44,7 +46,6 @@ public class Product extends BaseEntity {
     private Set<OrderItem> orders;
 
     @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
-    @OrderBy("id")
     @JsonManagedReference
     private Set<ProductImage> imageUrl;
 
@@ -71,4 +72,8 @@ public class Product extends BaseEntity {
     @JsonManagedReference
     private Set<Package> packages;
 
+    public Product(Long id, int minStock) {
+        this.id=id;
+        this.minStock=minStock;
+    }
 }

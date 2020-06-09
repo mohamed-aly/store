@@ -14,13 +14,13 @@ import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
 import java.util.Set;
 
 
 @Getter
 @Setter
 @RequiredArgsConstructor
-@ToString
 @Entity
 @Table(name = "user")
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
@@ -46,10 +46,16 @@ public class User extends BaseEntity {
     private String phoneNumber2;
 
     @Column(name = "email")
+    @NotEmpty(message = "Email is required.")
     private String email;
 
     @Column(name = "password")
+    @NotEmpty(message = "Password is required.")
     private String password;
+
+    @Transient
+    @NotEmpty(message = "Password confirmation is required.")
+    private String passwordConfirmation;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     @JsonManagedReference
@@ -63,11 +69,45 @@ public class User extends BaseEntity {
     @JoinColumn(name = "cart_id")
     private Cart cart;
 
-    public User(Long id, String firstName, String lastName, Set<Address> addresses) {
-        this.setId(id);
-        this.firstName=firstName;
-        this.lastName=lastName;
-        this.addresses=addresses;
+    public User(String email, String password) {
+        this.email=email;
+        this.password=password;
+    }
+
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((email == null) ? 0 : email.hashCode());
+        result = prime * result + ((password == null) ? 0 : password.hashCode());
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        User other = (User) obj;
+        if (email == null) {
+            if (other.email != null)
+                return false;
+        } else if (!email.equals(other.email))
+            return false;
+        if (password == null) {
+            if (other.password != null)
+                return false;
+        } else if (!password.equals(other.password))
+            return false;
+        return true;
+    }
+
+    @Override
+    public String toString() {
+        return "User [email=" + email + "]";
     }
 
 }

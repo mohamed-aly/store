@@ -1,11 +1,16 @@
 package com.vis.store.bundle.user;
 
 
+import com.vis.store.exceptions.EmailExistsException;
+
 import java.util.Set;
 
 public interface UserService {
 
-    User save(User user);
+    User registerNewUser(User user) throws EmailExistsException;
+
+    User updateExistingUser(User user) throws EmailExistsException;
+
 
     User findById(Long l);
 

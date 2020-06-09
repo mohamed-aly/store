@@ -1,6 +1,8 @@
 package com.vis.store.bundle.user;
 
+import com.vis.store.exceptions.EmailExistsException;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -10,16 +12,20 @@ import java.util.Set;
 
 @Slf4j
 @Service
+@Transactional
 public class UserServiceImpl implements UserService {
 
     private final UserDAO userDAO;
 
-    public UserServiceImpl(UserDAO userDAO) {
+    private PasswordEncoder passwordEncoder;
+
+    public UserServiceImpl(UserDAO userDAO, PasswordEncoder passwordEncoder) {
         this.userDAO = userDAO;
+        this.passwordEncoder=passwordEncoder;
     }
 
     @Override
-    @Transactional
+
     public Set<User> findAll() {
         log.debug("I'm in the service");
 
@@ -29,17 +35,27 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    @Transactional
     public void deleteById(Long idToDelete) {
 
     }
 
+    private boolean emailExist(final String email) {
+        final User user = userDAO.findByEmail(email);
+        return user != null;
+    }
+
     @Override
-    @Transactional
-    public User save(User user) {
-        User savedUser = userDAO.save(user);
-        log.debug("Saved User id: " + savedUser.getId());
+    public User registerNewUser(final User user) throws EmailExistsException {
+        if (emailExist(user.getEmail())) {
+            throw new EmailExistsException("There is an account with that email address: " + user.getEmail());
+        }
+        user.setPassword(passwordEncoder.encode(user.getPassword()));
         return userDAO.save(user);
+    }
+
+    @Override
+    public User updateExistingUser(User user) throws EmailExistsException {
+        return null;
     }
 
     @Override
