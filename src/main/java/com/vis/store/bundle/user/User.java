@@ -1,8 +1,6 @@
 package com.vis.store.bundle.user;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.annotation.*;
 import com.vis.store.bundle.BaseEntity;
 import com.vis.store.bundle.address.Address;
 import com.vis.store.bundle.cart.Cart;
@@ -11,11 +9,10 @@ import com.vis.store.bundle.userType.UserType;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
-import org.hibernate.validator.constraints.Email;
-import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.*;
-
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotEmpty;
 import java.util.Set;
 
 
@@ -69,9 +66,10 @@ public class User extends BaseEntity {
     @JoinColumn(name = "cart_id")
     private Cart cart;
 
-    public User(String email, String password) {
+    public User(String email, String password, UserType userType) {
         this.email = email;
         this.password = password;
+        this.userType=userType;
     }
 
     @Override

@@ -2,6 +2,7 @@ package com.vis.store.bundle.user;
 
 
 import com.vis.store.exceptions.EmailExistsException;
+import org.springframework.security.core.Authentication;
 
 import java.util.Set;
 
@@ -18,4 +19,6 @@ public interface UserService {
     Set<User> findAll();
 
     void deleteById(Long idToDelete);
+
+    Authentication getCurrentUser();
 }

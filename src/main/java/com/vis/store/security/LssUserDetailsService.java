@@ -18,8 +18,6 @@ import java.util.Collection;
 @Transactional
 public class LssUserDetailsService implements UserDetailsService {
 
-    private static final String ROLE_USER = "ROLE_USER";
-
     private UserDAO userDAO;
 
     public LssUserDetailsService(UserDAO userDAO) {
@@ -32,7 +30,9 @@ public class LssUserDetailsService implements UserDetailsService {
         if (user == null) {
             throw new UsernameNotFoundException("No user found with username: " + email);
         }
-        return new org.springframework.security.core.userdetails.User(user.getEmail(), user.getPassword(), true, true, true, true, getAuthorities(ROLE_USER));
+        return new org.springframework.security.core.userdetails.User(user.getEmail(),
+                user.getPassword(), true, true, true,
+                true, getAuthorities("ROLE_"+user.getUserType().getUserType().toUpperCase()));
     }
 
     private Collection<? extends GrantedAuthority> getAuthorities(String role) {

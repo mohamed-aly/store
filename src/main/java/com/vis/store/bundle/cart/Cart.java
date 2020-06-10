@@ -1,7 +1,6 @@
 package com.vis.store.bundle.cart;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.vis.store.bundle.BaseEntity;
 import com.vis.store.bundle.cartItem.CartItem;
 import lombok.Getter;

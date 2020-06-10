@@ -1,21 +1,24 @@
 package com.vis.store.config;
 
 
-import com.vis.store.bundle.user.User;
 import com.vis.store.bundle.user.UserDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.access.intercept.RunAsImplAuthenticationProvider;
+import org.springframework.security.authentication.AuthenticationProvider;
+import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.password.Md4PasswordEncoder;
-import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.crypto.password.Pbkdf2PasswordEncoder;
+
+import java.security.SecureRandom;
 
 
 @EnableWebSecurity
@@ -23,25 +26,17 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 public class LssSecurityConfig extends WebSecurityConfigurerAdapter {
 
     private UserDetailsService userDetailsService;
-    private UserDAO userDAO;
+
 
     public LssSecurityConfig(@Qualifier("lssUserDetailsService") UserDetailsService userDetailsService, UserDAO userDAO) {
         this.userDetailsService = userDetailsService;
-        this.userDAO = userDAO;
     }
 
 
-//    @PostConstruct
-//    private void saveTestUser() {
-//        final User user = new User();
-//        user.setEmail("test@email.com");
-//        user.setPassword(passwordEncoder().encode("pass"));
-//        userDAO.save(user);
-//    }
-
     @Autowired
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {// @formatter:off
-        auth.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder());
+        auth.authenticationProvider(runAsAuthenticationProvider());
+        auth.authenticationProvider(daoAuthenticationProvider());
     } // @formatter:on
 
     @Override
@@ -59,7 +54,7 @@ public class LssSecurityConfig extends WebSecurityConfigurerAdapter {
 
                 .and()
                 .rememberMe()
-                .tokenValiditySeconds(6)
+                .tokenValiditySeconds(7)
                 .key("lssAppKey")
                 .rememberMeCookieName("rody")
 
@@ -72,7 +67,22 @@ public class LssSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Bean
     public PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
+        return new BCryptPasswordEncoder(10, new SecureRandom());
+    }
+
+    @Bean
+    public AuthenticationProvider runAsAuthenticationProvider(){
+        RunAsImplAuthenticationProvider authenticationProvider = new RunAsImplAuthenticationProvider();
+        authenticationProvider.setKey("MyRunAsKey");
+        return authenticationProvider;
+    }
+
+    @Bean
+    public AuthenticationProvider daoAuthenticationProvider(){
+        final DaoAuthenticationProvider daoAuthenticationProvider = new DaoAuthenticationProvider();
+        daoAuthenticationProvider.setUserDetailsService(userDetailsService);
+        daoAuthenticationProvider.setPasswordEncoder(passwordEncoder());
+        return daoAuthenticationProvider;
     }
 
 }

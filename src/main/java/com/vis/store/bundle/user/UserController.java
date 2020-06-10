@@ -1,6 +1,7 @@
 package com.vis.store.bundle.user;
 
 import com.vis.store.exceptions.EmailExistsException;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
@@ -29,9 +30,22 @@ public class UserController {
         return userService.registerNewUser(user);
     }
 
-    @GetMapping("/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     public void deleteUser(@PathVariable Long id){
         userService.deleteById(id);
+    }
+
+    @PatchMapping("/update")
+    public User updateUser(@RequestBody User user) throws EmailExistsException {
+        User updatedUser = userService.updateExistingUser(user);
+        updatedUser.setPassword(null);
+        return updatedUser;
+    }
+
+    @GetMapping("/currentUser")
+    @Secured({"ROLE_ADMIN", "RUN_AS_REPORTER"})
+    public Object currentUser(){
+        return userService.getCurrentUser().getPrincipal();
     }
 
 

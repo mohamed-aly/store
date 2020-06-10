@@ -2,6 +2,9 @@ package com.vis.store.bundle.user;
 
 import com.vis.store.exceptions.EmailExistsException;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.security.access.annotation.Secured;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -40,6 +43,13 @@ public class UserServiceImpl implements UserService {
         userDAO.deleteById(idToDelete);
     }
 
+    @Override
+    @Secured({"ROLE_RUN_AS_REPORTER"})
+    public Authentication getCurrentUser() {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        return authentication;
+    }
+
     private boolean emailExist(final String email) {
         final User user = userDAO.findByEmail(email);
         return user != null;
@@ -51,13 +61,17 @@ public class UserServiceImpl implements UserService {
             throw new EmailExistsException("There is an account with that email address: " + insertedUser.getEmail());
         }
 
+        Long maxId = userDAO.getMaxId();
+        log.debug(maxId.toString());
+        insertedUser.setId(maxId + 1);
         insertedUser.setPassword(passwordEncoder.encode(insertedUser.getPassword()));
         return userDAO.save(insertedUser);
     }
 
     @Override
     public User updateExistingUser(User user) throws EmailExistsException {
-        return null;
+        user.setPassword(passwordEncoder.encode(user.getPassword()));
+        return user;
     }
 
     @Override
