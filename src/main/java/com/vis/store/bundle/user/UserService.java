@@ -11,7 +11,6 @@ public interface UserService {
 
     User updateExistingUser(User user) throws EmailExistsException;
 
-
     User findById(Long l);
 
     User getUserByEmail(String email);

@@ -1,14 +1,14 @@
 package com.vis.store.bundle.user;
 
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import com.vis.store.exceptions.EmailExistsException;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Set;
 
 
 @RestController
+@Validated
 @CrossOrigin
 @RequestMapping("/user")
 public class UserController {
@@ -20,9 +20,22 @@ public class UserController {
     }
 
     @GetMapping("/all")
-    public Set<User> getUser(){
+    public Set<User> getUsers(){
         return userService.findAll();
     }
+
+    @PostMapping("/save")
+    User newEmployee(@RequestBody User user) throws EmailExistsException {
+        return userService.registerNewUser(user);
+    }
+
+    @GetMapping("/delete/{id}")
+    public void deleteUser(@PathVariable Long id){
+        userService.deleteById(id);
+    }
+
+
+
 
 }
 	

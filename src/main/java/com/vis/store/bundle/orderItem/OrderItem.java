@@ -21,7 +21,7 @@ public class OrderItem extends BaseEntity {
     @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE,
             CascadeType.DETACH, CascadeType.REFRESH}, fetch = FetchType.LAZY)
     @JoinColumn(name = "product_id")
-    @JsonBackReference
+    @JsonBackReference(value = "orderItem-product")
     private Product product;
 
     @Column(name = "quantity")
@@ -32,7 +32,7 @@ public class OrderItem extends BaseEntity {
 
     @ManyToOne(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.DETACH, CascadeType.REFRESH})
     @JoinColumn(name = "order_id")
-    @JsonBackReference
+    @JsonBackReference(value="orderItem-order")
     private Order order;
 
 

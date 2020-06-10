@@ -21,7 +21,7 @@ public class UserServiceImpl implements UserService {
 
     public UserServiceImpl(UserDAO userDAO, PasswordEncoder passwordEncoder) {
         this.userDAO = userDAO;
-        this.passwordEncoder=passwordEncoder;
+        this.passwordEncoder = passwordEncoder;
     }
 
     @Override
@@ -34,9 +34,10 @@ public class UserServiceImpl implements UserService {
         return userSet;
     }
 
+
     @Override
     public void deleteById(Long idToDelete) {
-
+        userDAO.deleteById(idToDelete);
     }
 
     private boolean emailExist(final String email) {
@@ -45,12 +46,13 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User registerNewUser(final User user) throws EmailExistsException {
-        if (emailExist(user.getEmail())) {
-            throw new EmailExistsException("There is an account with that email address: " + user.getEmail());
+    public User registerNewUser(final User insertedUser) throws EmailExistsException {
+        if (emailExist(insertedUser.getEmail())) {
+            throw new EmailExistsException("There is an account with that email address: " + insertedUser.getEmail());
         }
-        user.setPassword(passwordEncoder.encode(user.getPassword()));
-        return userDAO.save(user);
+
+        insertedUser.setPassword(passwordEncoder.encode(insertedUser.getPassword()));
+        return userDAO.save(insertedUser);
     }
 
     @Override

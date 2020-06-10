@@ -11,10 +11,11 @@ import com.vis.store.bundle.userType.UserType;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
-import lombok.ToString;
+import org.hibernate.validator.constraints.Email;
+import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotEmpty;
+
 import java.util.Set;
 
 
@@ -26,11 +27,10 @@ import java.util.Set;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 public class User extends BaseEntity {
 
-
     @ManyToOne(fetch = FetchType.LAZY,
             cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.DETACH, CascadeType.REFRESH})
     @JoinColumn(name = "user_type_id")
-    @JsonBackReference
+    @JsonBackReference(value="userType-user")
     private UserType userType;
 
     @Column(name = "first_name")
@@ -47,6 +47,7 @@ public class User extends BaseEntity {
 
     @Column(name = "email")
     @NotEmpty(message = "Email is required.")
+    @Email
     private String email;
 
     @Column(name = "password")
@@ -54,15 +55,14 @@ public class User extends BaseEntity {
     private String password;
 
     @Transient
-    @NotEmpty(message = "Password confirmation is required.")
     private String passwordConfirmation;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
-    @JsonManagedReference
+    @JsonManagedReference(value="address-user")
     private Set<Address> addresses;
 
     @OneToMany(mappedBy = "user")
-    @JsonManagedReference
+    @JsonManagedReference(value="orderDetails-user")
     private Set<OrderDetails> ordersDetails;
 
     @OneToOne(fetch = FetchType.LAZY)
@@ -70,8 +70,8 @@ public class User extends BaseEntity {
     private Cart cart;
 
     public User(String email, String password) {
-        this.email=email;
-        this.password=password;
+        this.email = email;
+        this.password = password;
     }
 
     @Override

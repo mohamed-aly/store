@@ -21,7 +21,7 @@ public class ProductImage extends BaseEntity {
 
     @ManyToOne
     @JoinColumn(name = "product_id")
-    @JsonBackReference
+    @JsonBackReference(value="productImage-product")
     private Product product;
 
 

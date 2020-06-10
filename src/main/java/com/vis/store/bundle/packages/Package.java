@@ -24,12 +24,12 @@ public class Package extends BaseEntity {
     @ManyToOne(fetch = FetchType.LAZY,
             cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.DETACH, CascadeType.REFRESH})
     @JoinColumn(name = "grade_id")
-    @JsonBackReference
+    @JsonBackReference(value="package-grade")
     private Grade grade;
 
     @ManyToOne(fetch = FetchType.LAZY,
             cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.DETACH, CascadeType.REFRESH})
     @JoinColumn(name = "product_id")
-    @JsonBackReference
+    @JsonBackReference(value="package-product")
     private Product product;
 }

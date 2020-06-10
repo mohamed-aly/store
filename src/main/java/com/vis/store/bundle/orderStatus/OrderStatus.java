@@ -9,6 +9,7 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.List;
+import java.util.Set;
 
 @Getter
 @Setter
@@ -22,7 +23,7 @@ public class OrderStatus extends BaseEntity {
 
     @OneToMany(mappedBy = "orderStatus",
             cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.DETACH, CascadeType.REFRESH})
-    @JsonManagedReference
-    private List<Order> orders;
+    @JsonManagedReference(value="order-orderStatus")
+    private Set<Order> orders;
 
 }

@@ -7,7 +7,7 @@ public interface UserDAO extends CrudRepository<User, Long> {
 
     Iterable<User> findAll();
 
-    @Query("Select new User(u.email, u.password) from User u")
+    @Query("Select new User(u.email, u.password) from User u where u.email=:email")
     User findByEmail(String email);
 
 }

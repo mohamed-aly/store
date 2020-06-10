@@ -9,6 +9,7 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.List;
+import java.util.Set;
 
 @Getter
 @Setter
@@ -22,8 +23,8 @@ public class GradeLevel extends BaseEntity {
 
     @OneToMany(mappedBy = "gradeLevel",
             cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.DETACH, CascadeType.REFRESH})
-    @JsonManagedReference
-    private List<Grade> grades;
+    @JsonManagedReference(value="grade-gradeLevel")
+    private Set<Grade> grades;
 
 
 }

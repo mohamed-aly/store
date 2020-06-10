@@ -11,6 +11,7 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.List;
+import java.util.Set;
 
 @Getter
 @Setter
@@ -21,13 +22,13 @@ public class Grade extends BaseEntity {
 
     @OneToMany(mappedBy = "grade",
             cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.DETACH, CascadeType.REFRESH})
-    @JsonManagedReference
-    private List<Package> classifiedProducts;
+    @JsonManagedReference(value="package-grade")
+    private Set<Package> classifiedProducts;
 
     @ManyToOne(fetch = FetchType.LAZY,
             cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.DETACH, CascadeType.REFRESH})
     @JoinColumn(name = "grade_level")
-    @JsonBackReference
+    @JsonBackReference(value="grade-gradeLevel")
     private GradeLevel gradeLevel;
 
     @Column(name = "grade_number")

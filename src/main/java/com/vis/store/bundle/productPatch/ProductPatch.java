@@ -27,7 +27,7 @@ public class ProductPatch extends BaseEntity {
     @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE,
             CascadeType.DETACH, CascadeType.REFRESH}, fetch = FetchType.LAZY)
     @JoinColumn(name = "product_id")
-    @JsonBackReference
+    @JsonBackReference(value="productPatch-product")
     private Product product;
 
     @Column(name = "quantity")

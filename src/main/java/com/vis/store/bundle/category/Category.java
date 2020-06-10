@@ -1,5 +1,6 @@
 package com.vis.store.bundle.category;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.vis.store.bundle.BaseEntity;
@@ -29,7 +30,7 @@ public class Category extends BaseEntity {
 
     @OneToMany(mappedBy = "category",
             cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.DETACH, CascadeType.REFRESH})
-    @JsonManagedReference
+    @JsonManagedReference(value="category-product")
     private List<Product> products;
 
 

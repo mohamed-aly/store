@@ -19,7 +19,7 @@ public class Offer extends BaseEntity {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "product_id")
-    @JsonBackReference
+    @JsonBackReference(value="offer-product")
     private Product product;
 
     @Column(name = "discount")

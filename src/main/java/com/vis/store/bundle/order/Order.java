@@ -13,6 +13,7 @@ import lombok.Setter;
 import javax.persistence.*;
 import java.util.Date;
 import java.util.List;
+import java.util.Set;
 
 @Getter
 @Setter
@@ -23,7 +24,7 @@ public class Order extends BaseEntity {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "order_status_id")
-    @JsonBackReference
+    @JsonBackReference(value="order-orderStatus")
     private OrderStatus orderStatus;
 
     @Column(name = "submit_date")
@@ -39,12 +40,11 @@ public class Order extends BaseEntity {
     private Date lastUpdateDate;
 
     @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
-    @JsonManagedReference
-    private List<OrderItem> orderItems;
+    @JsonManagedReference(value="orderItem-order")
+    private Set<OrderItem> orderItems;
 
-    @ManyToOne(fetch = FetchType.LAZY,
-            cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.DETACH, CascadeType.REFRESH})
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "shipper_id")
-    @JsonBackReference
+    @JsonBackReference(value="shipper-order")
     private Shipper shipper;
 }

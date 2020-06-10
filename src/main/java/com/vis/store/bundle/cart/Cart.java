@@ -25,7 +25,6 @@ public class Cart extends BaseEntity {
 
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "cart_id")
-    @JsonManagedReference
     private Set<CartItem> cartItems;
 
 }

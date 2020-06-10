@@ -1,5 +1,6 @@
 package com.vis.store.bundle.userType;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.vis.store.bundle.BaseEntity;
@@ -22,6 +23,6 @@ public class UserType extends BaseEntity {
 
     @OneToMany(mappedBy = "userType",
             cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.DETACH, CascadeType.REFRESH})
-    @JsonManagedReference
+    @JsonManagedReference(value="userType-user")
     private Set<User> users;
 }

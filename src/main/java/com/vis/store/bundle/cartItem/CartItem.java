@@ -19,7 +19,7 @@ public class CartItem extends BaseEntity {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "product_id")
-    @JsonBackReference
+    @JsonBackReference(value="cartItem-product")
     private Product product;
 
     @Column(name = "quantity")
