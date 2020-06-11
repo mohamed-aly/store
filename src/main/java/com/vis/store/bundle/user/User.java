@@ -1,6 +1,8 @@
 package com.vis.store.bundle.user;
 
-import com.fasterxml.jackson.annotation.*;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.vis.store.bundle.BaseEntity;
 import com.vis.store.bundle.address.Address;
 import com.vis.store.bundle.cart.Cart;

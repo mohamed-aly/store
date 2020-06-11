@@ -2,7 +2,6 @@ package com.vis.store.bundle.user;
 
 import com.vis.store.exceptions.EmailExistsException;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.security.access.annotation.Secured;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -44,7 +43,6 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    @Secured({"ROLE_RUN_AS_REPORTER"})
     public Authentication getCurrentUser() {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         return authentication;

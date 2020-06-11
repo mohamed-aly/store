@@ -2,6 +2,7 @@ package com.vis.store.config;
 
 
 import com.vis.store.bundle.user.UserDAO;
+import com.vis.store.security.LoggingFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
@@ -16,7 +17,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.crypto.password.Pbkdf2PasswordEncoder;
+import org.springframework.security.web.authentication.AnonymousAuthenticationFilter;
 
 import java.security.SecureRandom;
 
@@ -27,9 +28,13 @@ public class LssSecurityConfig extends WebSecurityConfigurerAdapter {
 
     private UserDetailsService userDetailsService;
 
+    private LoggingFilter loggingFilter;
 
-    public LssSecurityConfig(@Qualifier("lssUserDetailsService") UserDetailsService userDetailsService, UserDAO userDAO) {
+
+    public LssSecurityConfig(@Qualifier("lssUserDetailsService") UserDetailsService userDetailsService,
+                             LoggingFilter loggingFilter) {
         this.userDetailsService = userDetailsService;
+        this.loggingFilter = loggingFilter;
     }
 
 
@@ -42,6 +47,8 @@ public class LssSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {// @formatter:off
         http
+                .addFilterBefore(loggingFilter, AnonymousAuthenticationFilter.class)
+
                 .authorizeRequests()
                 .antMatchers("/product/**").authenticated()
                 .anyRequest().permitAll()

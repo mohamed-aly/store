@@ -1,38 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c01a1f11-0e40-4b68-8988-dc488fb7657e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_1_5_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_3_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/config/MethodSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_el_javax_el_api_2_2_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_35.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_jasper_9_0_35.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jdt_ecj_3_18_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_web_javax_el_2_2_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_3_4_Final.xml" beforeDir="false" />
+    <list default="true" id="c01a1f11-0e40-4b68-8988-dc488fb7657e" name="Default Changelist" comment="added the runs as configuration">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/security/LoggingFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/cart/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/cart/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/category/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/category/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/grade/Grade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/grade/Grade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/gradeLevel/GradeLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/gradeLevel/GradeLevel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/order/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/order/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/orderStatus/OrderStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/orderStatus/OrderStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/product/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/product/ProductServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/shipper/Shipper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/shipper/Shipper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/user/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/user/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/user/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/user/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/user/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/user/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/user/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/userType/UserType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/userType/UserType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/config/LssSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/config/LssSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/security/LssUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/security/LssUserDetailsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/utilities/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/utilities/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store.iml" beforeDir="false" afterPath="$PROJECT_DIR$/store.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +170,7 @@
       <workItem from="1591624110420" duration="4398000" />
       <workItem from="1591691121150" duration="15685000" />
       <workItem from="1591712559836" duration="2550000" />
-      <workItem from="1591773515628" duration="14461000" />
+      <workItem from="1591773515628" duration="19146000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1591087391383</created>
@@ -407,7 +382,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591773069555</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="added the runs as configuration">
+      <created>1591793990030</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1591793990030</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -416,7 +398,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Fixed services. Closes #3" />
     <MESSAGE value="added circle ci configuration. Closes #8" />
     <MESSAGE value="fixed circleci configurations" />
     <MESSAGE value="add MySQL configuration. Closes #5" />
@@ -441,7 +422,8 @@
     <MESSAGE value="Removed the HQL daos for products and added the best sellers method in the dao interface" />
     <MESSAGE value="added the basic security" />
     <MESSAGE value="added the password hashing configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the password hashing configuration" />
+    <MESSAGE value="added the runs as configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="added the runs as configuration" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="23" key="#Assign_Data_Sources" timestamp="1591171994276">
@@ -488,10 +470,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="112" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1591619607017" />
-    <state x="183" y="0" key="CommitChangelistDialog2" timestamp="1591773058214">
+    <state x="183" y="0" key="CommitChangelistDialog2" timestamp="1591798292708">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="183" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1591773058214" />
+    <state x="183" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1591798292708" />
     <state x="463" y="106" key="FileChooserDialogImpl" timestamp="1591088014651">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -504,38 +486,38 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="352" y="70" key="Github.UntrackedFilesDialog/0.0.1366.728@0.0.1366.728" timestamp="1591086837827" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1591793672636">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1591801359274">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591793672636" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1591793672636">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591801359274" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1591801359274">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591793672636" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1591793672635">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591801359274" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1591801359273">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591793672635" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1591793672636">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591801359273" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1591801359274">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591793672636" />
-    <state width="1323" height="179" key="GridCell.Tab.1.bottom" timestamp="1591793672637">
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591801359274" />
+    <state width="1323" height="179" key="GridCell.Tab.1.bottom" timestamp="1591801359275">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591793672637" />
-    <state width="1323" height="179" key="GridCell.Tab.1.center" timestamp="1591793672636">
+    <state width="1323" height="179" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591801359275" />
+    <state width="1323" height="179" key="GridCell.Tab.1.center" timestamp="1591801359274">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1591793672636" />
-    <state width="1323" height="179" key="GridCell.Tab.1.left" timestamp="1591793672636">
+    <state width="1323" height="179" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1591801359274" />
+    <state width="1323" height="179" key="GridCell.Tab.1.left" timestamp="1591801359274">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1591793672636" />
-    <state width="1323" height="179" key="GridCell.Tab.1.right" timestamp="1591793672637">
+    <state width="1323" height="179" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1591801359274" />
+    <state width="1323" height="179" key="GridCell.Tab.1.right" timestamp="1591801359275">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1591793672637" />
+    <state width="1323" height="179" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1591801359275" />
     <state width="1323" height="223" key="GridCell.Tab.2.bottom" timestamp="1591786959968">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -564,10 +546,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="7" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1591452726585" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1591773072156">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1591793993258">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1591773072156" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1591793993258" />
     <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1591773539768">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
