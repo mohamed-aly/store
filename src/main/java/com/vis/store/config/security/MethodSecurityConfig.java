@@ -1,4 +1,4 @@
-package com.vis.store.config;
+package com.vis.store.config.security;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.access.intercept.RunAsManager;

@@ -1,4 +1,4 @@
-package com.vis.store.security;
+package com.vis.store.config.security;
 
 
 import com.vis.store.bundle.user.User;
@@ -30,13 +30,9 @@ public class LssUserDetailsService implements UserDetailsService {
         if (user == null) {
             throw new UsernameNotFoundException("No user found with username: " + email);
         }
-        return new org.springframework.security.core.userdetails.User(user.getEmail(),
-                user.getPassword(), true, true, true,
-                true, getAuthorities("ROLE_"+user.getUserType().getUserType().toUpperCase()));
+        return user;
     }
 
-    private Collection<? extends GrantedAuthority> getAuthorities(String role) {
-        return Arrays.asList(new SimpleGrantedAuthority(role));
-    }
+
 
 }

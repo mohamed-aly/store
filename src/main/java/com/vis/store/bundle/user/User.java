@@ -1,6 +1,7 @@
 package com.vis.store.bundle.user;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.vis.store.bundle.BaseEntity;
@@ -12,10 +13,15 @@ import com.vis.store.validation.ValidPassword;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
+import java.util.Arrays;
+import java.util.Collection;
 import java.util.Set;
 
 
@@ -25,10 +31,9 @@ import java.util.Set;
 @Entity
 @Table(name = "user")
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
-public class User extends BaseEntity {
+public class User extends BaseEntity implements UserDetails {
 
-    @ManyToOne(fetch = FetchType.LAZY,
-            cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.DETACH, CascadeType.REFRESH})
+    @ManyToOne
     @JoinColumn(name = "user_type_id")
     @JsonBackReference(value="userType-user")
     private UserType userType;
@@ -74,6 +79,36 @@ public class User extends BaseEntity {
         this.email = email;
         this.password = password;
         this.userType=userType;
+    }
+
+    @Override
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+        return Arrays.asList(new SimpleGrantedAuthority(this.userType.getUserType().toUpperCase()));
+    }
+
+    @Override
+    public String getUsername() {
+        return this.email;
+    }
+
+    @Override
+    public boolean isAccountNonExpired() {
+        return true;
+    }
+
+    @Override
+    public boolean isAccountNonLocked() {
+        return true;
+    }
+
+    @Override
+    public boolean isCredentialsNonExpired() {
+        return true;
+    }
+
+    @Override
+    public boolean isEnabled() {
+        return true;
     }
 
     @Override

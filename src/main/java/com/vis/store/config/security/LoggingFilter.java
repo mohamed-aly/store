@@ -1,4 +1,4 @@
-package com.vis.store.security;
+package com.vis.store.config.security;
 
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;

@@ -1,8 +1,7 @@
-package com.vis.store.config;
+package com.vis.store.config.security;
 
 
-import com.vis.store.bundle.user.UserDAO;
-import com.vis.store.security.LoggingFilter;
+import com.vis.store.config.security.LoggingFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;

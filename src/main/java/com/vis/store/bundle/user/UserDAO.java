@@ -6,7 +6,7 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface UserDAO extends CrudRepository<User, Long> {
 
-    @Query("Select u from User u left join fetch u.userType where u.email=:email")
+    @Query("Select u from User u where u.email=:email")
     User findByEmail(String email);
 
     @Query("Select max(u.id) from User u")
