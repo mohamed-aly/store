@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c01a1f11-0e40-4b68-8988-dc488fb7657e" name="Default Changelist" comment="added the runs as configuration">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/security/LoggingFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/user/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/user/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/user/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/config/LssSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/config/LssSecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,6 +167,7 @@
       <workItem from="1591691121150" duration="15685000" />
       <workItem from="1591712559836" duration="2550000" />
       <workItem from="1591773515628" duration="19146000" />
+      <workItem from="1592055906182" duration="124000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1591087391383</created>
@@ -426,10 +423,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="added the runs as configuration" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="275" y="23" key="#Assign_Data_Sources" timestamp="1591171994276">
+    <state x="275" y="23" key="#Assign_Data_Sources" timestamp="1592055945874">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="23" key="#Assign_Data_Sources/0.0.1366.728@0.0.1366.728" timestamp="1591171994276" />
+    <state x="275" y="23" key="#Assign_Data_Sources/0.0.1366.728@0.0.1366.728" timestamp="1592055945874" />
     <state x="275" y="0" width="816" height="728" key="#Intentions" timestamp="1591517797520">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -550,10 +547,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1591793993258" />
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1591773539768">
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1592055906850">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1591773539768" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1592055906850" />
     <state x="447" y="83" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1591171445546">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

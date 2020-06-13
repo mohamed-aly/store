@@ -8,6 +8,7 @@ import com.vis.store.bundle.address.Address;
 import com.vis.store.bundle.cart.Cart;
 import com.vis.store.bundle.orderDetails.OrderDetails;
 import com.vis.store.bundle.userType.UserType;
+import com.vis.store.validation.ValidPassword;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
@@ -51,6 +52,7 @@ public class User extends BaseEntity {
 
     @Column(name = "password")
     @NotEmpty(message = "Password is required.")
+    @ValidPassword
     private String password;
 
     @Transient
