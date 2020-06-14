@@ -3,16 +3,12 @@ package com.vis.store.config.security;
 
 import com.vis.store.bundle.user.User;
 import com.vis.store.bundle.user.UserDAO;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
-import java.util.Arrays;
-import java.util.Collection;
 
 @Service
 @Transactional

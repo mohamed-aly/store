@@ -1,6 +1,7 @@
 package com.vis.store.bundle.product;
 
 
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -25,6 +26,7 @@ public class ProductController {
     }
 
     @GetMapping("/bestSellers")
+    @PreAuthorize("hasAuthority('ADMIN')")
     public Set<Product> getBestSellers() {
         return productService.findBestSellers();
     }
