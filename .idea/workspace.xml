@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c01a1f11-0e40-4b68-8988-dc488fb7657e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_1_4_200.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-default.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data-h2.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/product/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/product/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/user/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/bundle/user/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/config/security/LoggingFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/config/security/LoggingFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/config/security/LssSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/config/security/LssSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/config/security/LssUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/config/security/LssUserDetailsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vis/store/config/security/MethodSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vis/store/config/security/MethodSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store.iml" beforeDir="false" afterPath="$PROJECT_DIR$/store.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +74,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -82,7 +83,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/vis/store" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
@@ -96,11 +97,11 @@
       <recent name="com.vis.store.security" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\developer\my projects\store\src\main\resources" />
       <recent name="E:\developer\my projects\store\src\main\java\com\vis\store" />
       <recent name="E:\developer\my projects\store\src\main\java\com\vis\store\config\security" />
       <recent name="E:\developer\my projects\store\src\main\java\com\vis\store\bundle\user" />
       <recent name="E:\developer\my projects\store\src\main\java\com\vis\store\bundle" />
-      <recent name="E:\developer\my projects\store\src\main\java\com\vis\store\bundle\cart" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -124,6 +125,68 @@
       <module name="store" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.vis.store.StoreApplication" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_store" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="64317" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -173,7 +236,7 @@
       <workItem from="1591691121150" duration="15685000" />
       <workItem from="1591712559836" duration="2550000" />
       <workItem from="1591773515628" duration="19146000" />
-      <workItem from="1592055906182" duration="9705000" />
+      <workItem from="1592055906182" duration="12339000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1591087391383</created>
@@ -406,7 +469,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592057109809</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="method security enabled">
+      <created>1592138801913</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1592138801913</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -415,7 +485,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add MySQL configuration. Closes #5" />
     <MESSAGE value="fixed maven install error by declaring default profile" />
     <MESSAGE value="fixed circle ci maven command" />
     <MESSAGE value="fixed surefire plugin" />
@@ -440,7 +509,8 @@
     <MESSAGE value="added the runs as configuration" />
     <MESSAGE value="add the password validation" />
     <MESSAGE value="implemented user entity to implements userdetails security interface. closes #13" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented user entity to implements userdetails security interface. closes #13" />
+    <MESSAGE value="method security enabled" />
+    <option name="LAST_COMMIT_MESSAGE" value="method security enabled" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="23" key="#Assign_Data_Sources" timestamp="1592055945874">
@@ -459,10 +529,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="23" key="#SQL_Dialects/0.0.1366.728@0.0.1366.728" timestamp="1591165905593" />
-    <state x="274" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591188135277">
+    <state x="274" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592213030193">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="274" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1591188135277" />
+    <state x="274" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1592213030193" />
     <state x="488" y="49" key="#com.intellij.ide.util.MemberChooser" timestamp="1592137742044">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -487,10 +557,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="112" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1591619607017" />
-    <state x="183" y="0" key="CommitChangelistDialog2" timestamp="1592057108348">
+    <state x="183" y="0" key="CommitChangelistDialog2" timestamp="1592138800278">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="183" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1592057108348" />
+    <state x="183" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1592138800278" />
     <state x="463" y="106" key="FileChooserDialogImpl" timestamp="1591088014651">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -503,38 +573,38 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="352" y="70" key="Github.UntrackedFilesDialog/0.0.1366.728@0.0.1366.728" timestamp="1591086837827" />
-    <state width="1323" height="223" key="GridCell.Tab.0.bottom" timestamp="1592136473351">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1592223889818">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592136473351" />
-    <state width="1323" height="223" key="GridCell.Tab.0.center" timestamp="1592136473351">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592223889818" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1592223889817">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592136473351" />
-    <state width="1323" height="223" key="GridCell.Tab.0.left" timestamp="1592136473350">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592223889817" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1592223889817">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592136473350" />
-    <state width="1323" height="223" key="GridCell.Tab.0.right" timestamp="1592136473351">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592223889817" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1592223889818">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592136473351" />
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1592136473352">
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592223889818" />
+    <state width="1323" height="179" key="GridCell.Tab.1.bottom" timestamp="1592223889819">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592136473352" />
-    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1592136473352">
+    <state width="1323" height="179" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592223889819" />
+    <state width="1323" height="179" key="GridCell.Tab.1.center" timestamp="1592223889818">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1592136473352" />
-    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1592136473351">
+    <state width="1323" height="179" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1592223889818" />
+    <state width="1323" height="179" key="GridCell.Tab.1.left" timestamp="1592223889818">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1592136473351" />
-    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1592136473352">
+    <state width="1323" height="179" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1592223889818" />
+    <state width="1323" height="179" key="GridCell.Tab.1.right" timestamp="1592223889818">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1592136473352" />
+    <state width="1323" height="179" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1592223889818" />
     <state width="1323" height="223" key="GridCell.Tab.2.bottom" timestamp="1592136473353">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -563,10 +633,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="7" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1591452726585" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1592057111605">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1592138803681">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1592057111605" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1592138803681" />
     <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1592055906850">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
